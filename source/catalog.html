@@ -3,7 +3,186 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы каталога
+<main class="main-content">
+	<section class="main-content__products products">
+		<h2 class="products__title heading">Каталог продукции</h2>
+		<ul class="products__list">
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy PRO 500 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">500 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Курица</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">700 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy PRO 1000 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">1000 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Курица</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">1000 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy PRO 500 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">500 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Рыба</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">700 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy PRO 1000 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">1000 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Рыба</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">1000 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy slim 500 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">500 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Гречка</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">400 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy slim 1000 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">1000 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Гречка</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">700 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="products__item product-card">
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+				<p class="product-card__title">Cat Energy slim 500 г</p>
+				<ul class="product-card__parameters-list product-card-parameters-list">
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Масса</p>
+						<p class="product-card-parameters-list__parameter-value">500 г</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Вкус</p>
+						<p class="product-card-parameters-list__parameter-value">Рис</p>
+					</li>
+					<li class="product-card-parameters-list__item">
+						<p class="product-card-parameters-list__parameter-name">Цена</p>
+						<p class="product-card-parameters-list__parameter-value">500 ₽</p>
+					</li>
+				</ul>
+				<button class="product-card__button button-primary">Заказать</button>
+			</li>
+		</ul>
+		<div class="products__show-all show-all">
+			<p class="show-all__title">Показать еще 100500 товаров</p>
+			<p class="show-all__text">На самом деле вкусов гораздо больше!</p>
+			<button class="show-all__button button-secondary">показать все</button>
+		</div>
+	</section>
+	<section class="main-content__additional-products additional-products">
+		<h2 class="additional-products__title">Дополнительные товары</h2>
+		<ul class="additional-products__list additional-products-list">
+			<li class="additional-products-list__item additional-product-card">
+				<p class="additional-product-card__title">Сахарозаменитель</p>
+				<div class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+					<p class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (100 г)</p>
+					<p class="additional-product-card__product-price additional-product-card-amount-wrapper__item">200 ₽</p>
+				</div>
+				<button class="additional-product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="additional-products-list__item additional-product-card">
+				<p class="additional-product-card__title">питьевая вода</p>
+				<div class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+					<p class="additional-product-card__product-size additional-product-card-amount-wrapper__item">5 литров</p>
+					<p class="additional-product-card__product-price additional-product-card-amount-wrapper__item">50 ₽</p>
+				</div>
+				<button class="additional-product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="additional-products-list__item additional-product-card">
+				<p class="additional-product-card__title">молоко</p>
+				<div class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+					<p class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 литр</p>
+					<p class="additional-product-card__product-price additional-product-card-amount-wrapper__item">100 ₽</p>
+				</div>
+				<button class="additional-product-card__button button-primary">Заказать</button>
+			</li>
+			<li class="additional-products-list__item additional-product-card">
+				<p class="additional-product-card__title">витамины</p>
+				<div class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+					<p class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (30 г)</p>
+					<p class="additional-product-card__product-price additional-product-card-amount-wrapper__item">300 ₽</p>
+				</div>
+				<button class="additional-product-card__button button-primary">Заказать</button>
+			</li>
+		</ul>
+	</section>
 </main>
 {% endblock %}
