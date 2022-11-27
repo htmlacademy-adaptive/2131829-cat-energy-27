@@ -3,7 +3,30 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-content">
+	<section class="main-content__service service">
+		<h2 class="service__title heading">Подбор программы</h2>
+		<p class="service__text highlighted-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+		<form class="service__form service-form" action="https://echo.htmlacademy.ru/" method="post">
+			<fieldset class="service-form__fieldset cat-data">
+				<legend class="visually-hidden">Данные о котике.</legend>
+				<label class="cat-data__label input-text-field-label" for="cat-name">ИМЯ:*</label>
+				<input class="cat-data__input input-text-field" type="text" name="cat-name" placeholder="барсик" id="cat-name" required>
+				<label class="cat-data__label input-text-field-label" for="cat-weight">Вес (кг):*</label>
+				<input class="cat-data__input input-text-field" type="number" name="cat-weight" placeholder="7" id="cat-weight" required>
+				<label class="cat-data__label input-text-field-label" for="cat-age">Возраст (лет):</label>
+				<input class="cat-data__input input-text-field" type="number" name="cat-age" placeholder="7" id="cat-age">
+			</fieldset>
+			<fieldset class="service-form__fieldset feed-plan">
+				<legend class="visually-hidden">План питания.</legend>
+				<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-slim" value="plan-slim" checked>
+				<label class="feed-plan__label input-radio-label" for="plan-slim">похудение</label>
+				<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-pro" value="plan-pro">
+				<label class="feed-plan__label input-radio-label" for="plan-pro">набор массы</label>
+				<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-none" value="plan-none">
+				<label class="feed-plan__label input-radio-label" for="plan-none">не знаю (нужен ваш совет)</label>
+			</fieldset>
+		</form>
+	</section>
 </main>
 {% endblock %}
