@@ -26,7 +26,59 @@
 				<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-none" value="plan-none">
 				<label class="feed-plan__label input-radio-label" for="plan-none">не знаю (нужен ваш совет)</label>
 			</fieldset>
+			<fieldset class="service-form__fieldset cat-owner-data">
+				<legend class="cat-owner-data__legend form-legend">Контактные данные(владельца кота)</legend>
+				<ul class="cat-owner-data__list">
+					<li class="cat-owner-data__item">
+						<label class="cat-owner-data__label input-text-field-label" for="cat-owner-email">E-mail:*</label>
+						<input class="cat-owner-data__input input-text-field" type="email" name="cat-owner-email" placeholder="kuklachev@gmail.com" id="cat-owner-email" required>
+					</li>
+					<li class="cat-owner-data__item">
+						<label class="cat-owner-data__label input-text-field-label" for="cat-owner-phone">Телефон:*</label>
+						<input class="cat-owner-data__input input-text-field" type="text" name="cat-owner-phone" placeholder="8 (960) 900-60-90" id="cat-owner-phone" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="service-form__fieldset comment">
+				<legend class="comment__legend form-legend">Комментарий</legend>
+				<label class="visually-hidden" for="comment-text">Текстовое поле для описания кота.</label>
+				<textarea class="comment__input input-text-field textarea" id="comment-text" name="comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+			</fieldset>
+			<fieldset class="service-form__fieldset additional-service">
+				<legend class="additional-service__legend form-legend">Дополнительно</legend>
+				<ul class="additional-service__list">
+					<li class="additional-service__item">
+						<input class="additional-service__input input-checkbox" type="checkbox" name="additional-service-sugar-substitute" id="additional-service-sugar-substitute" checked>
+						<label class="additional-service__label input-checkbox-label" for="additional-service-sugar-substitute">сахарозаменитель</label>
+					</li>
+					<li class="additional-service__item">
+						<input class="additional-service__input input-checkbox" type="checkbox" name="additional-service-drinking-water" id="additional-service-drinking-water">
+						<label class="additional-service__label input-checkbox-label" for="additional-service-drinking-water">питьевая вода</label>
+					</li>
+					<li class="additional-service__item">
+						<input class="additional-service__input input-checkbox" type="checkbox" name="additional-service-milk" id="additional-service-milk">
+						<label class="additional-service__label input-checkbox-label" for="additional-service-milk">молоко</label>
+					</li>
+					<li class="additional-service__item">
+						<input class="additional-service__input input-checkbox" type="checkbox" name="additional-service-vitamins" id="additional-service-vitamins">
+						<label class="additional-service__label input-checkbox-label" for="additional-service-vitamins">витамины</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="service-form__button button-primary" type="submit">отправить заявку</button>
+			<p class="service-form__note">* — Обязательные поля</p>
 		</form>
+	</section>
+
+	<section class="main-content__address address">
+		<h2 class="visually-hidden">Адрес компании.</h2>
+		<p class="address__title highlighted-text">Приглашаем к сотрудничеству дилеров!</p>
+		<address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+	</section>
+
+	<section class="main-content__company-location-on-map location">
+		<h2 class="visually-hidden">Местоположение компании на карте.</h2>
+		<div class="location__map"></div>
 	</section>
 </main>
 {% endblock %}
