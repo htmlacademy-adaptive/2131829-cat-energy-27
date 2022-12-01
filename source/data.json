@@ -7,11 +7,11 @@
 		},
 		{
 			"path": "catalog.html",
-			"name": "Каталог"
+			"name": "Каталог продукции"
 		},
 		{
 			"path": "form.html",
-			"name": "Форма"
+			"name": "Подбор программы"
 		}
 	],
 	"viewports": {
@@ -34,5 +34,49 @@
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
 		}
-	}
+	},
+	"productCards": [
+		{
+			"title": "Cat energy pro 500 г",
+			"parameterValue": ["500 г", "Курица", "700 ₽"]
+		},
+		{
+			"title": "Cat energy pro 1000 г",
+			"parameterValue": ["1000 г", "Курица", "1000 ₽"]
+		},
+		{
+			"title": "Cat energy pro 500 г",
+			"parameterValue": ["500 г", "Рыба", "700 ₽"]
+		},
+		{
+			"title": "Cat energy pro 1000 г",
+			"parameterValue": ["1000 г", "Рыба", "1000 ₽"]
+		},
+		{
+			"title": "Cat energy slim 500 г",
+			"parameterValue": ["500 г", "Гречка", "400 ₽"]
+		},
+		{
+			"title": "Cat energy slim 1000 г",
+			"parameterValue": ["1000 г", "Гречка", "700 ₽"]
+		},
+		{
+			"title": "Cat energy slim 500 г",
+			"parameterValue": ["500 г", "Рис", "500 ₽"]
+		}
+	],
+	"socials": [
+		{
+			"name": "Ссылка на Вконтакте.",
+			"link": "https://vk.com/htmlacademy"
+		},
+		{
+			"name": "Ссылка на Ютуб.",
+			"link": "https://www.youtube.com/user/htmlacademyru"
+		},
+		{
+			"name": "Ссылка на Телеграм.",
+			"link": "https://t.me/htmlacademy"
+		}
+	]
 }

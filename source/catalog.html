@@ -3,222 +3,96 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-content">
-	<section class="main-content__products products">
-		<h2 class="products__title heading">Каталог продукции</h2>
-		<ul class="products__list">
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy pro 500 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">500 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Курица</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">700 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy pro 1000 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">1000 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Курица</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">1000 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy pro 500 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">500 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Рыба</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">700 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy pro 1000 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">1000 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Рыба</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">1000 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy slim 500 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">500 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Гречка</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">400 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy slim 1000 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">1000 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Гречка</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">700 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
-					<h3 class="product-card__title">Cat energy slim 500 г</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
-				</a>
-				<dl class="product-card__parameters-list product-card-parameters-list">
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Масса</dt>
-						<dd class="product-card-parameters-list__parameter-value">500 г</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
-						<dd class="product-card-parameters-list__parameter-value">Рис</dd>
-					</div>
-					<div class="product-card-parameters-list__item">
-						<dt class="product-card-parameters-list__parameter-name">Цена</dt>
-						<dd class="product-card-parameters-list__parameter-value">500 ₽</dd>
-					</div>
-				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
-			</li>
-			<li class="products__item show-all">
-				<p class="show-all__title">Показать еще 100500 товаров</p>
-				<p class="show-all__text">На самом деле вкусов гораздо больше!</p>
-				<a class="show-all__button button-secondary" href="#">Показать все</a>
-			</li>
-		</ul>
-	</section>
-	<section class="main-content__additional-products additional-products">
-		<h2 class="additional-products__title">Дополнительные товары</h2>
-		<ul class="additional-products__list additional-products-list">
-			<li class="additional-products-list__item additional-product-card">
-				<a class="additional-product-card__link" href="#">
-					<h3 class="additional-product-card__title">Сахарозаменитель</h3>
-				</a>
-				<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
-					<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (100 г)</dt>
-					<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">200 ₽</dd>
-				</dl>
-				<a class="additional-product-card__button button-primary" href="#">Заказать</a>
-			</li>
-			<li class="additional-products-list__item additional-product-card">
-				<a class="additional-product-card__link" href="#">
-					<h3 class="additional-product-card__title">Питьевая вода</h3>
-				</a>
-				<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
-					<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">5 литров</dt>
-					<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">50 ₽</dd>
-				</dl>
-				<a class="additional-product-card__button button-primary" href="#">Заказать</a>
-			</li>
-			<li class="additional-products-list__item additional-product-card">
-				<a class="additional-product-card__link" href="#">
-					<h3 class="additional-product-card__title">Молоко</h3>
-				</a>
-				<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
-					<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 литр</dt>
-					<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">100 ₽</dd>
-				</dl>
-				<a class="additional-product-card__button button-primary" href="#">Заказать</a>
-			</li>
-			<li class="additional-products-list__item additional-product-card">
-				<a class="additional-product-card__link" href="#">
-					<h3 class="additional-product-card__title">Витамины</h3>
-				</a>
-				<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
-					<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (30 г)</dt>
-					<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">300 ₽</dd>
-				</dl>
-				<a class="additional-product-card__button button-primary" href="#">Заказать</a>
-			</li>
-		</ul>
-		<div class="additional-products__offer gift-offer-card">
-			<p class="gift-offer-card__text">Закажите все и получите чехол для кота в подарок!</p>
-		</div>
-	</section>
+<section class="main-content__products products">
+	<h2 class="products__title heading">Каталог продукции</h2>
+	<ul class="products__list">
+		{% for productCard in productCards %}
+		<li class="products__item product-card">
+			<a class="product-card__link" href="#">
+				<h3 class="product-card__title">{{ productCard.title }}</h3>
+				<img class="product-card__image" src="#" alt="Коробка с кормом.">
+			</a>
+			<dl class="product-card__parameters-list product-card-parameters-list">
+				<div class="product-card-parameters-list__item">
+					<dt class="product-card-parameters-list__parameter-name">Масса</dt>
+					<dd class="product-card-parameters-list__parameter-value">{{ productCard.parameterValue[0] }}</dd>
+				</div>
+				<div class="product-card-parameters-list__item">
+					<dt class="product-card-parameters-list__parameter-name">Вкус</dt>
+					<dd class="product-card-parameters-list__parameter-value">{{ productCard.parameterValue[1] }}</dd>
+				</div>
+				<div class="product-card-parameters-list__item">
+					<dt class="product-card-parameters-list__parameter-name">Цена</dt>
+					<dd class="product-card-parameters-list__parameter-value">{{ productCard.parameterValue[2] }}</dd>
+				</div>
+			</dl>
+			<a class="product-card__button button-primary" href="form.html">Заказать</a>
+		</li>
+		{% endfor %}
+		<li class="products__item show-all">
+			<p class="show-all__title">Показать еще 100500 товаров</p>
+			<p class="show-all__text">На самом деле вкусов гораздо больше!</p>
+			<a class="show-all__button button-secondary" href="#">Показать все</a>
+		</li>
+	</ul>
+</section>
+<section class="main-content__additional-products additional-products">
+	<h2 class="additional-products__title">Дополнительные товары</h2>
+	<ul class="additional-products__list additional-products-list">
+		<li class="additional-products-list__item additional-product-card">
+			<a class="additional-product-card__link" href="#">
+				<h3 class="additional-product-card__title">Сахарозаменитель</h3>
+			</a>
+			<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+				<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (100 г)</dt>
+				<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">200 ₽</dd>
+			</dl>
+			<a class="additional-product-card__button button-primary" href="#">Заказать</a>
+		</li>
+		<li class="additional-products-list__item additional-product-card">
+			<a class="additional-product-card__link" href="#">
+				<h3 class="additional-product-card__title">Питьевая вода</h3>
+			</a>
+			<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+				<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">5 литров</dt>
+				<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">50 ₽</dd>
+			</dl>
+			<a class="additional-product-card__button button-primary" href="#">Заказать</a>
+		</li>
+		<li class="additional-products-list__item additional-product-card">
+			<a class="additional-product-card__link" href="#">
+				<h3 class="additional-product-card__title">Молоко</h3>
+			</a>
+			<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+				<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 литр</dt>
+				<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">100 ₽</dd>
+			</dl>
+			<a class="additional-product-card__button button-primary" href="#">Заказать</a>
+		</li>
+		<li class="additional-products-list__item additional-product-card">
+			<a class="additional-product-card__link" href="#">
+				<h3 class="additional-product-card__title">Витамины</h3>
+			</a>
+			<dl class="additional-product-card__amount-wrapper additional-product-card-amount-wrapper">
+				<dt class="additional-product-card__product-size additional-product-card-amount-wrapper__item">1 упаковка (30 г)</dt>
+				<dd class="additional-product-card__product-price additional-product-card-amount-wrapper__item">300 ₽</dd>
+			</dl>
+			<a class="additional-product-card__button button-primary" href="#">Заказать</a>
+		</li>
+	</ul>
+	<div class="additional-products__offer gift-offer-card">
+		<p class="gift-offer-card__text">Закажите все и получите чехол для кота в подарок!</p>
+	</div>
+</section>
 
-	<section class="main-content__address address">
-		<h2 class="visually-hidden">Адрес компании.</h2>
-		<p class="address__title highlighted-text">Приглашаем к сотрудничеству дилеров!</p>
-		<address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-	</section>
+<section class="main-content__address address">
+	<h2 class="visually-hidden">Адрес компании.</h2>
+	<p class="address__title highlighted-text">Приглашаем к сотрудничеству дилеров!</p>
+	<address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+</section>
 
-	<section class="main-content__company-location-on-map location">
-		<h2 class="visually-hidden">Местоположение компании на карте.</h2>
-		<div class="location__map"></div>
-	</section>
-</main>
+<section class="main-content__company-location-on-map location">
+	<h2 class="visually-hidden">Местоположение компании на карте.</h2>
+	<div class="location__map"></div>
+</section>
 {% endblock %}

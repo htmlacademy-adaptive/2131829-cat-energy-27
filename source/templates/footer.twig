@@ -1,25 +1,17 @@
-<footer class="main-footer">
-	<a class="main-footer__logo" href="index.html">
-		<img src="#" alt="Логотип.">
-	</a>
-	<ul class="main-footer__socials socials">
-		<li class="socials__item">
-			<a class="socials__link" href="#">
-				<span class="visually-hidden">Ссылка на Вконтакте.</span>
-			</a>
-		</li>
-		<li class="socials__item">
-			<a class="socials__link" href="#">
-				<span class="visually-hidden">Ссылка на Ютуб.</span>
-			</a>
-		</li>
-		<li class="socials__item">
-			<a class="socials__link" href="#">
-				<span class="visually-hidden">Ссылка на Телеграм.</span>
-			</a>
-		</li>
-	</ul>
-	<a class="main-footer__copyright copyright-link">
-		<p class="copyright-link__title">HTML Academy</p>
-	</a>
-</footer>
+	<footer class="main-footer">
+		<a class="main-footer__logo" href="index.html">
+			<img src="#" alt="Логотип.">
+		</a>
+		<ul class="main-footer__socials socials">
+			{% for social in socials %}
+			<li class="socials__item">
+				<a class="socials__link" href="{{ social.link }}">
+					<span class="visually-hidden">{{ social.name }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<a class="main-footer__copyright copyright-link">
+			<p class="copyright-link__title">HTML Academy</p>
+		</a>
+	</footer>

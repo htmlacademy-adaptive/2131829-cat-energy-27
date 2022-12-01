@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +11,19 @@
 </head>
 
 <body class="page__body">
-	{% include "./header.twig" %}
 
-	{% block main %}{% endblock %}
+{% include "./header.twig" %}
 
-	{% include "./footer.twig" %}
+	<main class="main-content">
+		<h1 class="visually-hidden">{{ pages[pageId].name }}</h1>
+		{% block main %}{% endblock %}
+
+		{% include "./contacts.twig" %}
+
+	</main>
+
+{% include "./footer.twig" %}
+
 </body>
 
 </html>
