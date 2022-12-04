@@ -1,0 +1,11 @@
+.site-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-list__link {
+	text-decoration: none;
+	color: var(--second-text-color);
+	text-transform: uppercase;
+}

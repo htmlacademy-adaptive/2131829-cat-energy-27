@@ -1,30 +1,40 @@
 .page {
-	height: 100%;
+	background-color: var(--main-bg-color);
 	font-family: var(--main-font);
+	font-style: normal;
+	font-weight: 400;
 	font-size: 14px;
-	// font-size: 15px;
 	line-height: 18px;
-	// line-height: 24px;
-	color: var(--main-color);
+	color: var(--main-text-color);
 }
 
-.page__body {
-	margin: 0;
-	min-height: 100%;
-	background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
+// .page {
+// 	height: 100%;
+// 	font-family: var(--main-font);
+// 	font-size: 14px;
+// 	// font-size: 15px;
+// 	line-height: 18px;
+// 	// line-height: 24px;
+// 	color: var(--main-color);
+// }
 
-	@include bg-image(test);
-}
+// .page__body {
+// 	margin: 0;
+// 	min-height: 100%;
+// 	background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
 
-.page__centerer {
-	margin: 0 20px;
+// 	@include bg-image(test);
+// }
 
-	@media #{$not-mobile} {
-		margin: 0 30px;
-	}
+// .page__centerer {
+// 	margin: 0 20px;
 
-	@media #{$desktop-only} {
-		width: 1220px;
-		margin: 0 auto;
-	}
-}
+// 	@media #{$not-mobile} {
+// 		margin: 0 30px;
+// 	}
+
+// 	@media #{$desktop-only} {
+// 		width: 1220px;
+// 		margin: 0 auto;
+// 	}
+// }

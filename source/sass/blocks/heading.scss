@@ -1,0 +1,10 @@
+.heading {
+	font-family: var(--accent-font);
+	font-size: 36px;
+	line-height: 40px;
+	color: var(--second-text-color);
+
+	&--light {
+		color: #ffffff;
+	}
+}

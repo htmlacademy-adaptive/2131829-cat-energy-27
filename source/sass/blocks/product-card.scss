@@ -1,0 +1,20 @@
+.product-card {
+	margin: 0;
+	padding: 0;
+	// line-height: 14px; - в фигме так, оставил 18 для однообразия
+}
+
+.product-card__link {
+	text-decoration: none;
+	font-family: var(--accent-font);
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #222222;
+}
+
+.product-card__title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+}

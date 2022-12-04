@@ -1,0 +1,11 @@
+.highlighted-text {
+	font-family: var(--accent-font);
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #111111;
+
+	&--light {
+		color: #ffffff;
+	}
+}
