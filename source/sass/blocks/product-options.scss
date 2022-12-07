@@ -2,3 +2,17 @@
 	margin: 0;
 	padding: 0;
 }
+
+.product-options__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	@media #{$not-mobile} {
+		gap: 30px;
+	}
+
+	@media #{$desktop-only} {
+		gap: 80px;
+	}
+}

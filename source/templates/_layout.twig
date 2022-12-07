@@ -11,19 +11,19 @@
 </head>
 
 <body class="page__body">
+	{# <div class="page__body-container"> #}
+		{% include "./header.twig" %}
 
-{% include "./header.twig" %}
+		<main class="main-content">
+			<h1 class="visually-hidden">{{ pages[pageId].name }}</h1>
+			{% block main %}{% endblock %}
 
-	<main class="main-content">
-		<h1 class="visually-hidden">{{ pages[pageId].name }}</h1>
-		{% block main %}{% endblock %}
+			{% include "./contacts.twig" %}
 
-		{% include "./contacts.twig" %}
+		</main>
 
-	</main>
-
-{% include "./footer.twig" %}
-
+		{% include "./footer.twig" %}
+	{# </div> #}
 </body>
 
 </html>

@@ -8,6 +8,35 @@
 	color: var(--main-text-color);
 }
 
+// .page__body-container {
+// 	min-height: 100%;
+// 	display: grid;
+// 	grid-template-rows: auto 1fr auto;
+// }
+
+.page__centerer {
+	margin: 0 20px;
+
+	@media #{$not-mobile} {
+		margin: 0 30px;
+	}
+
+	@media #{$desktop-only} {
+		width: 1220px;
+		margin: 0 auto;
+	}
+}
+
+.page__body {
+	margin: 0;
+	min-height: 100vh; //godlike gridstyle sticky-footer
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background: hsl(0 0% 96%) var(--bg-image) no-repeat center / contain;
+
+	@include bg-image(test);
+}
+
 // .page {
 // 	height: 100%;
 // 	font-family: var(--main-font);

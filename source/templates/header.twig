@@ -1,17 +1,20 @@
 	<header class="main-header">
-		<a class="main-header__logo" href="index.html">
-			<img src="#" alt="Логотип.">
-		</a>
-		<nav class="main-header__navigation main-navigation">
-			<button class="main-navigation__toggle" type="button">
-				<span class="visually-hidden">Открыть меню.</span>
-			</button>
-			<ul class="main-navigation__list site-list">
-				{% for page in pages %}
-				<li class="site-list__item">
-					<a class="site-list__link" href="{{ page.path }}" {% if permalink == page.path %}aria-current="page"{% endif %} >{{ page.name }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</nav>
+		<div class="main-header__container page__centerer">
+			<a class="main-header__logo" href="index.html">
+				<img class="main-header__logo-icon" src="#" alt="Пес-супергерой в маске.">
+				<img class="main-header__logo-name" src="#" alt="Логотип компании.">
+			</a>
+			<nav class="main-header__navigation main-navigation">
+				<button class="main-navigation__toggle" type="button">
+					<span class="visually-hidden">Открыть меню.</span>
+				</button>
+				<ul class="main-navigation__list site-list">
+					{% for page in pages %}
+					<li class="site-list__item">
+						<a class="site-list__link" href="{{ page.path }}" {% if permalink == page.path %}aria-current="page"{% endif %} >{{ page.name }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
 	</header>

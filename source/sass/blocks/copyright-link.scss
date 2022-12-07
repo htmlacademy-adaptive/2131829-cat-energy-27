@@ -3,4 +3,30 @@
 	font-family: var(--main-font);
 	font-size: 16px;
 	line-height: 19px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	@media #{$not-mobile} {
+		justify-content: end;
+	}
+
+	&::after {
+		content: "logo";
+		display: block;
+		color: #000000;
+		background-color: #777777;
+		// margin-left: auto; if j-c: s-b doesn't fit
+
+		@media #{$not-mobile} {
+			margin-left: 23px;
+		}
+	}
+}
+
+.copyright-link__title {
+	margin: 0;
+	padding: 0;
 }
