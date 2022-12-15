@@ -1,5 +1,29 @@
+.additional-service {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 34px;
+}
+
+.additional-service__legend {
+	margin: 0;
+	margin-bottom: 34px;
+}
+
 .additional-service__list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	justify-content: center;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }

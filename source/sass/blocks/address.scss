@@ -1,9 +1,31 @@
 .address {
 	margin: 0;
 	padding: 0;
+	position: relative;
+}
+
+.address__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@media #{$desktop-only} {
+		position: absolute;
+		box-sizing: border-box;
+		width: 565px;
+		background-color: #ffffff;
+		padding: 56px 80px;
+		top: 95px;
+		left: 110px;
+	}
+}
+
+.address__title {
+	width: 139px;
 }
 
 .address__text {
 	font-style: inherit;
 	line-height: 20px;
+	width: 139px;
 }

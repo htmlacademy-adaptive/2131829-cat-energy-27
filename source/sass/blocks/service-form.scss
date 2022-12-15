@@ -1,8 +1,48 @@
+.service-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
 .service-form__fieldset {
 	border: none;
+}
+
+.service-form__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.service-form__button {
+	@media #{$not-mobile} {
+
+		// flex-shrink: 0;
+	}
 }
 
 .service-form__note {
 	// line-height: 16px; - оставил по умолчанию для единообразия
 	color: var(--second-text-color);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+	@media #{$not-mobile} {
+
+	}
+}
+
+
+.service-form__wrapper {
+	display: grid;
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
 }

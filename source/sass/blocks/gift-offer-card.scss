@@ -1,8 +1,26 @@
 .gift-offer-card {
+	box-sizing: border-box;
 	background-color: rgba(104, 183, 56, 0.85);
+	width: 280px;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	padding: 43px 58px;
+
+	@media #{$not-mobile} {
+		width: 100%;
+	}
+
+	@media #{$desktop-only} {
+		width: 245px;
+		height: 288px;
+	}
 }
 
 .gift-offer-card__text {
+	text-align: center;
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;

@@ -1,7 +1,22 @@
 .product-card {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	// line-height: 14px; - в фигме так, оставил 18 для однообразия
+	// width: 280px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		// width: 324px;
+		background-color: var(--second-bg-color);
+		padding: 39px;
+	}
+
+	@media #{$desktop-only} {
+		width: 245px;
+	}
 }
 
 .product-card__link {
@@ -17,4 +32,8 @@
 	margin: 0;
 	font-size: 16px;
 	font-weight: 400;
+
+	@media #{$not-mobile} {
+		text-align: center;
+	}
 }

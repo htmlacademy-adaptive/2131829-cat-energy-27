@@ -4,4 +4,17 @@
 	list-style: none;
 	font-size: 12px;
 	line-height: 16px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-card-parameters-list__item {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.product-card-parameters-list__parameter-value {
+	margin: 0;
+	padding: 0;
 }
