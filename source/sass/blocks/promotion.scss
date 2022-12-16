@@ -10,6 +10,11 @@
 	@media #{$not-mobile} {
 		position: relative;
 		align-items: start;
+		padding-left: 87px;
+	}
+
+	@media #{$desktop-only} {
+		padding-left: 30px;
 	}
 }
 
@@ -18,21 +23,6 @@
 
 	@media #{$not-mobile} {
 		text-align: start;
-		margin-left: 87px;
-	}
-
-	@media #{$desktop-only} {
-		margin-left: 30px;
-	}
-}
-
-.promotion__text {
-	@media #{$not-mobile} {
-		margin-left: 87px;
-	}
-
-	@media #{$desktop-only} {
-		margin-left: 30px;
 	}
 }
 
@@ -63,6 +53,5 @@
 
 	@media #{$desktop-only} {
 		position: unset;
-		margin-left: 30px;
 	}
 }
