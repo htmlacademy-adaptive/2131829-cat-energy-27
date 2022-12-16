@@ -8,22 +8,12 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	// display: flex;
-	// flex-direction: column;
-	// flex-wrap: wrap;
-	// gap: 19px;
 	display: grid;
 	row-gap: 19px;
+	grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+	column-gap: clamp(60px, 30px + 100vw / 25.6, 80px);
 
 	@media #{$not-mobile} {
-		grid-template-columns: 1fr 1fr;
-		column-gap: 60px;
 		row-gap: 60px;
-	}
-
-	@media #{$desktop-only} {
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 80px;
-		row-gap: 63px;
 	}
 }
