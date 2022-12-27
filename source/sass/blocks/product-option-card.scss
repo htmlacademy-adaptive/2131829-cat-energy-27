@@ -28,9 +28,23 @@
 
 .product-option-card__title {
 	margin: 0;
-	margin-left: 69px;
+	// margin-left: 69px;
 	margin-bottom: 29px;
 	padding: 0;
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 50px;
+		height: 53px;
+		background-image: url("/img/cat_black_slim.png");
+		margin-right: 19px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
 
 	@media #{$not-mobile} {
 		margin-left: 0;
@@ -41,6 +55,12 @@
 		margin-left: 162px;
 		margin-bottom: 73px;
 	}
+}
+
+.product-option-card__title--variant-muscular-cat::before {
+	width: 67px;
+	background-image: url("/img/cat_black_muscular.png");
+	margin-right: 11px;
 }
 
 .product-option-card__text {
@@ -55,5 +75,24 @@
 
 	@media #{$desktop-only} {
 		margin-bottom: 23px;
+	}
+}
+
+.product-option-card__link-text {
+	display: flex;
+	align-items: center;
+
+	&::after {
+		position: relative;
+		display: block;
+		content: "";
+		width: 32px;
+		height: 10px;
+		background-color: #000000;
+		margin-left: 15px;
+
+		@media #{$not-mobile} {
+			margin-left: 25px;
+		}
 	}
 }

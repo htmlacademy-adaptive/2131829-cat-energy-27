@@ -20,6 +20,10 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 14px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 20px;
+	}
 }
 
 .cat-owner-data__legend {
@@ -28,6 +32,7 @@
 
 	@media #{$not-mobile} {
 		max-width: unset;
+		margin-bottom: 76px;
 	}
 }
 

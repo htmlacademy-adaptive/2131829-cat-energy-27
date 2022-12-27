@@ -6,6 +6,10 @@
 
 .comment__legend {
 	margin-bottom: 38px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 76px;
+	}
 }
 
 .comment__input {

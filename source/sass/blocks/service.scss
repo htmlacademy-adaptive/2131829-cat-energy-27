@@ -2,3 +2,28 @@
 	margin: 0;
 	padding: 0;
 }
+
+.service__title {
+	margin: 0;
+	margin-top: 27px;
+	margin-bottom: 37px;
+	padding: 0;
+
+	@media #{$not-mobile} {
+		margin-bottom: 54px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 56px;
+	}
+}
+
+.service__text {
+	margin: 0;
+	margin-bottom: 39px;
+	padding: 0;
+
+	@media #{$not-mobile} {
+		margin-bottom: 66px;
+	}
+}

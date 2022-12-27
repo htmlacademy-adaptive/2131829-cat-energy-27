@@ -1,3 +1,12 @@
 .input-radio {
 	// appearance: none;
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+
+	@media #{$not-mobile} {
+		width: 40px;
+		height: 40px;
+	}
 }

@@ -6,7 +6,7 @@
 <section class="main-content__service service">
 	<div class="service__container page__centerer">
 		<h2 class="service__title heading">Подбор программы</h2>
-		<p class="service__text highlighted-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+		<p class="service__text highlighted-text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
 		<form class="service__form service-form" action="https://echo.htmlacademy.ru/" method="post">
 			<div class="service-form__wrapper">
 				<fieldset class="service-form__fieldset cat-data">
@@ -26,16 +26,22 @@
 				</fieldset>
 				<fieldset class="service-form__fieldset feed-plan">
 					<legend class="visually-hidden">План питания.</legend>
-					<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-slim" value="plan-slim" checked>
-					<label class="feed-plan__label input-radio-label" for="plan-slim">Похудение</label>
-					<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-pro" value="plan-pro">
-					<label class="feed-plan__label input-radio-label" for="plan-pro">Набор массы</label>
-					<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-none" value="plan-none">
-					<label class="feed-plan__label input-radio-label" for="plan-none">Не знаю (нужен ваш совет)</label>
+					<div class="feed-plan__wrapper">
+						<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-slim" value="plan-slim" checked>
+						<label class="feed-plan__label input-radio-label" for="plan-slim">Похудение</label>
+					</div>
+					<div class="feed-plan__wrapper">
+						<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-pro" value="plan-pro">
+						<label class="feed-plan__label input-radio-label" for="plan-pro">Набор массы</label>
+					</div>
+					<div class="feed-plan__wrapper">
+						<input class="feed-plan__input input-radio" type="radio" name="feed-plan-name" id="plan-none" value="plan-none">
+						<label class="feed-plan__label input-radio-label" for="plan-none">Не знаю (нужен ваш совет)</label>
+					</div>
 				</fieldset>
 			</div>
 			<fieldset class="service-form__fieldset cat-owner-data">
-				<legend class="cat-owner-data__legend form-legend">Контактные данные (владельца кота)</legend>
+				<legend class="cat-owner-data__legend form-legend marked-heading">Контактные данные (владельца кота)</legend>
 				<ul class="cat-owner-data__list">
 					<li class="cat-owner-data__item">
 						<label class="cat-owner-data__label input-text-field-label" for="cat-owner-email">E-mail:*</label>
@@ -48,11 +54,11 @@
 				</ul>
 			</fieldset>
 			<div class="service-form__fieldset comment">
-				<label class="comment__legend form-legend" for="comment-text">Комментарий</label>
+				<label class="comment__legend form-legend marked-heading" for="comment-text">Комментарий</label>
 				<textarea class="comment__input input-text-field textarea" id="comment-text" name="comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</div>
 			<fieldset class="service-form__fieldset additional-service">
-				<legend class="additional-service__legend form-legend">Дополнительно</legend>
+				<legend class="additional-service__legend form-legend marked-heading">Дополнительно</legend>
 				<ul class="additional-service__list">
 					<li class="additional-service__item">
 						<input class="additional-service__input input-checkbox" type="checkbox" name="additional-service" id="additional-service-sugar-substitute" value="sugar-substitute" checked>

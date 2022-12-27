@@ -3,12 +3,15 @@
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
+	gap: 13px;
 
 	@media #{$desktop-only} {
 		max-width: 568px;
 	}
 }
 
-.feed-plan__label {
-	margin-bottom: 19px;
+.feed-plan__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }

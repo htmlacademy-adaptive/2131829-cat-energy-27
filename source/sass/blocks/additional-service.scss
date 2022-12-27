@@ -4,9 +4,19 @@
 	padding-bottom: 34px;
 }
 
+.additional-service__item {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
 .additional-service__legend {
 	margin: 0;
 	margin-bottom: 34px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 57px;
+	}
 }
 
 .additional-service__list {
@@ -21,6 +31,7 @@
 	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		row-gap: 32px;
 	}
 
 	@media #{$desktop-only} {

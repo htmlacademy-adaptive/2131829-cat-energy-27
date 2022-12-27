@@ -16,7 +16,7 @@
 		background-color: #ffffff;
 		padding: 56px 80px;
 		top: 95px;
-		left: 110px;
+		left: calc(50vw - 610px); //move from center of view port on half page minus margin
 	}
 }
 
