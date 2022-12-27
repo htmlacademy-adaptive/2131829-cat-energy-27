@@ -8,6 +8,16 @@
 	line-height: 20px;
 	background-color: #ffffff;
 	width: 100%;
+
+	@media #{$desktop-only} {
+		background: none;
+	}
+}
+
+.main-navigation__list {
+	@media #{$not-mobile} {
+		justify-content: end;
+	}
 }
 
 .main-navigation__toggle {

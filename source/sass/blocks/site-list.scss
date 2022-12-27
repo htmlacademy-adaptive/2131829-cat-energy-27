@@ -24,4 +24,10 @@
 	text-decoration: none;
 	color: var(--second-text-color);
 	text-transform: uppercase;
+
+	@media #{$desktop-only} {
+		color: #ffffff;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

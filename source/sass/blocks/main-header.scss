@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	min-width: 100%;
+	z-index: 3;
 
 	@media #{$mobile-only} {
 		min-height: 66px;
@@ -22,4 +23,8 @@
 	position: absolute;
 	top: 66px;
 	right: 0;
+
+	@media #{$not-mobile} {
+		position: unset;
+	}
 }
