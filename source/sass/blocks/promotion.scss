@@ -18,7 +18,7 @@
 				rgb(104 183 56 / 0.85),
 				rgb(104 183 56 / 0.85)
 			),
-			url("/img/grey-cat-licking.jpg") no-repeat var(--bg-position, center) / contain,
+			url("/img/grey-cat-licking.jpg") no-repeat var(--bg-positionX, center) var(--bg-positionY, center) / contain,
 			linear-gradient(
 				to right,
 				#504f55,
@@ -31,9 +31,10 @@
 		}
 
 		@media #{$desktop-only} {
-			--bg-position: right;
+			--bg-positionX: left +200px;
+			--bg-positionY: top +20px;
 			width: auto;
-			height: 694px;
+			height: 696px;
 			top: 0;
 			right: 0;
 			left: 50vw;
