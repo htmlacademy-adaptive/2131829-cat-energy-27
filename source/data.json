@@ -68,7 +68,7 @@
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 1043.87,
+					"width": 1044,
 					"height": 696
 				},
 				{
@@ -84,8 +84,8 @@
 			"sizes": [
 				{
 					"viewport": "desktop",
-					"width": 245.02,
-					"height": 288.9
+					"width": 246,
+					"height": 289
 				},
 				{
 					"viewport": "tablet",
@@ -94,8 +94,8 @@
 				},
 				{
 					"viewport": "mobile",
-					"width": 280,
-					"height": 289.88
+					"width": 279,
+					"height": 289
 				}
 			]
 		},
