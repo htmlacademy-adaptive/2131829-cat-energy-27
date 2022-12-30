@@ -40,6 +40,8 @@
 
 .additional-products__offer {
 	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media #{$desktop-only} {
 		margin: 0 auto;

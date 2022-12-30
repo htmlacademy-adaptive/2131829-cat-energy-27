@@ -21,7 +21,7 @@
 	},
 	"images": {
 		"map": {
-			"ext": "png",
+			"ext": "jpg",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -38,6 +38,211 @@
 					"viewport": "mobile",
 					"width": 320,
 					"height": 362
+				}
+			]
+		},
+		"index-can": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 552,
+					"height": 499
+				},
+				{
+					"viewport": "tablet",
+					"width": 708,
+					"height": 609
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 270
+				}
+			]
+		},
+		"cat-liking": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1043.87,
+					"height": 696
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 302
+				}
+			]
+		},
+		"cat-in-bag": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 245.02,
+					"height": 288.9
+				},
+				{
+					"viewport": "tablet",
+					"width": 707,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 289.88
+				}
+			]
+		},
+		"can-pro-chicken-500": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 86
+				}
+			]
+		},
+		"can-pro-chicken-1000": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 206
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		},
+		"can-pro-fish-500": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 78
+				}
+			]
+		},
+		"can-pro-fish-1000": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		},
+		"can-slim-buckwheat-500": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 78
+				}
+			]
+		},
+		"can-slim-buckwheat-1000": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 172,
+					"height": 196
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		},
+		"can-slim-rice-500": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "mobile",
+					"width": 72,
+					"height": 84
 				}
 			]
 		},
@@ -66,31 +271,38 @@
 	"productCards": [
 		{
 			"title": "Cat energy pro 500 г",
-			"parameterValue": ["500 г", "Курица", "700 ₽"]
+			"parameterValue": ["500 г", "Курица", "700 ₽"],
+			"imageName": "can-pro-chicken-500"
 		},
 		{
 			"title": "Cat energy pro 1000 г",
-			"parameterValue": ["1000 г", "Курица", "1000 ₽"]
+			"parameterValue": ["1000 г", "Курица", "1000 ₽"],
+			"imageName": "can-pro-chicken-1000"
 		},
 		{
 			"title": "Cat energy pro 500 г",
-			"parameterValue": ["500 г", "Рыба", "700 ₽"]
+			"parameterValue": ["500 г", "Рыба", "700 ₽"],
+			"imageName": "can-pro-fish-500"
 		},
 		{
 			"title": "Cat energy pro 1000 г",
-			"parameterValue": ["1000 г", "Рыба", "1000 ₽"]
+			"parameterValue": ["1000 г", "Рыба", "1000 ₽"],
+			"imageName": "can-pro-fish-1000"
 		},
 		{
 			"title": "Cat energy slim 500 г",
-			"parameterValue": ["500 г", "Гречка", "400 ₽"]
+			"parameterValue": ["500 г", "Гречка", "400 ₽"],
+			"imageName": "can-slim-buckwheat-500"
 		},
 		{
 			"title": "Cat energy slim 1000 г",
-			"parameterValue": ["1000 г", "Гречка", "700 ₽"]
+			"parameterValue": ["1000 г", "Гречка", "700 ₽"],
+			"imageName": "can-slim-buckwheat-1000"
 		},
 		{
 			"title": "Cat energy slim 500 г",
-			"parameterValue": ["500 г", "Рис", "500 ₽"]
+			"parameterValue": ["500 г", "Рис", "500 ₽"],
+			"imageName": "can-slim-rice-500"
 		}
 	],
 	"socials": [

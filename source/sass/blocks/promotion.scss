@@ -18,12 +18,14 @@
 				rgb(104 183 56 / 0.85),
 				rgb(104 183 56 / 0.85)
 			),
-			url("/img/grey-cat-licking.jpg") no-repeat var(--bg-positionX, center) var(--bg-positionY, center) / contain,
+			var(--bg-image) no-repeat var(--bg-positionX, center) var(--bg-positionY, center) / var(--bg-size, contain),
 			linear-gradient(
 				to right,
 				#504f55,
 				#414045
 			);
+
+		@include bg-image("cat-liking");
 
 
 		@media #{$tablet-only} {
@@ -31,8 +33,9 @@
 		}
 
 		@media #{$desktop-only} {
-			--bg-positionX: left +200px;
-			--bg-positionY: top +20px;
+			--bg-positionX: left;
+			// --bg-positionY: top;
+			--bg-size: cover;
 			width: auto;
 			height: 696px;
 			top: 0;
@@ -86,15 +89,25 @@
 	}
 }
 
+.promotion picture {
+	@media #{$tablet-only} {
+		grid-row: 3/4;
+		grid-column: 1/-1;
+		place-self: center;
+	}
+}
+
 .promotion__image { //temporary
 	width: 280px;
 	height: 270px;
+	margin-top: 29px;
 
 	@media #{$not-mobile} {
+		margin-top: 0;
 		width: 709px;
 		height: 609px;
-		grid-row: 3/4;
-		grid-column: 1/-1;
+		// grid-row: 3/4;
+		// grid-column: 1/-1;
 	}
 
 	@media #{$desktop-only} {
@@ -102,7 +115,7 @@
 		height: 499px;
 		position: absolute;
 		top: 0;
-		left: 428px;
+		left: 463px;
 	}
 }
 

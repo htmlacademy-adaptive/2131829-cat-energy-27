@@ -4,12 +4,17 @@
 	padding: 0;
 	// line-height: 14px; - в фигме так, оставил 18 для однообразия
 	// width: 280px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+	// display: flex;
+	// flex-wrap: wrap;
+	// flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
 
 	@media #{$not-mobile} {
 		// width: 324px;
+		display: flex;
+		flex-direction: column;
 		background-color: var(--second-bg-color);
 		padding: 39px;
 	}
@@ -19,6 +24,10 @@
 	}
 }
 
+// .product-card picture {
+// 	order: 3;
+// }
+
 .product-card__link {
 	text-decoration: none;
 	font-family: var(--accent-font);
@@ -26,14 +35,38 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #222222;
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	display: flex;
+
+	@media #{$not-mobile} {
+		flex-direction: column;
+	}
 }
 
 .product-card__title {
 	margin: 0;
 	font-size: 16px;
 	font-weight: 400;
+	order: 1;
 
 	@media #{$not-mobile} {
 		text-align: center;
+		order: unset;
 	}
+}
+
+.product-card__image {
+	// padding: 14px 36px 12px 36px;
+}
+
+.product-card__parameters-list {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	place-self: end;
+}
+
+.product-card__button {
+	grid-row: 2/3;
+	grid-column: 1/-1;
 }

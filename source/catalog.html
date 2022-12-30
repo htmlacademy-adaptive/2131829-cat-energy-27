@@ -11,7 +11,8 @@
 			<li class="products__item product-card">
 				<a class="product-card__link" href="#">
 					<h3 class="product-card__title">{{ productCard.title }}</h3>
-					<img class="product-card__image" src="#" alt="Коробка с кормом.">
+					{% set imageName = productCard.imageName %}
+					{% include "./templates/picture.twig" with {name: imageName, class: "product-card__image", alt: "Коробка с кормом."} %}
 				</a>
 				<dl class="product-card__parameters-list product-card-parameters-list">
 					<div class="product-card-parameters-list__item">
