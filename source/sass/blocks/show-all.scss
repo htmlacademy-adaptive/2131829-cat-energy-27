@@ -1,3 +1,23 @@
+.show-all {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 30px;
+		background: url("/icons/stack.svg#grey-plus-icon") no-repeat center / contain;
+		margin-bottom: 23px;
+	}
+}
+
+.show-all__title {
+	order: unset;
+	margin-bottom: 8px;
+}
+
 .show-all__text {
 	font-size: 12px;
 	line-height: 16px;

@@ -34,17 +34,3 @@
 		margin-left: auto;
 	}
 }
-
-.socials {
-	display: flex;
-	justify-content: center;
-	gap: 24px;
-}
-
-.socials__item {
-	&::before {
-		content: "link";
-		background-color: #000000;
-		color: #ffffff;
-	}
-}

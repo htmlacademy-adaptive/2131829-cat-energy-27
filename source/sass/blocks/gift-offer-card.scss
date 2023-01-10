@@ -23,13 +23,23 @@
 
 	@include bg-image("cat-in-bag");
 
-	@media #{$not-mobile} {
+	@media #{$tablet-only} {
 		height: 200px;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	@media #{$desktop-only} {
 		width: 245px;
 		height: 288px;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 80px;
+		height: 80px;
+		background: url("/icons/stack.svg#gift-icon") no-repeat center / contain;
 	}
 }
 
@@ -38,4 +48,8 @@
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
+
+	@media #{$tablet-only} {
+		text-align: start;
+	}
 }

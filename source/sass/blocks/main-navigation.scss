@@ -44,35 +44,51 @@
 
 .main-navigation--closed .main-navigation__toggle::before {
 	content: "";
-	position: absolute;
+	display: block;
 	width: 24px;
-	height: 1.5px;
-	top: 0;
-	left: 0;
-	background-color: #000000;
-	box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+	height: 24px;
+	background: url("/icons/stack.svg#burger") no-repeat center / contain;
 }
 
-.main-navigation--opened .main-navigation__toggle {
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		top: 8px;
-		left: 0;
-		width: 24.76px;
-		height: 1.5px;
-		background-color: #000000;
-	}
-
-	&::before {
-		transform: rotate(45deg);
-	}
-
-	&::after {
-		transform: rotate(-45deg);
-	}
+.main-navigation--opened .main-navigation__toggle::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url("/icons/stack.svg#cross") no-repeat center / contain;
 }
+
+// .main-navigation--closed .main-navigation__toggle::before {
+// 	content: "";
+// 	position: absolute;
+// 	width: 24px;
+// 	height: 1.5px;
+// 	top: 0;
+// 	left: 0;
+// 	background-color: #000000;
+// 	box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+// }
+
+// .main-navigation--opened .main-navigation__toggle {
+// 	&::before,
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 8px;
+// 		left: 0;
+// 		width: 24.76px;
+// 		height: 1.5px;
+// 		background-color: #000000;
+// 	}
+
+// 	&::before {
+// 		transform: rotate(45deg);
+// 	}
+
+// 	&::after {
+// 		transform: rotate(-45deg);
+// 	}
+// }
 
 .main-navigation--nojs.main-header__navigation {
 	position: static;

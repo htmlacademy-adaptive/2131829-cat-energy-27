@@ -8,16 +8,18 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	align-items: center;
 
 	@media #{$not-mobile} {
 		justify-content: end;
 	}
 
 	&::after {
-		content: "logo";
+		content: "";
 		display: block;
-		color: #000000;
-		background-color: #777777;
+		width: 27px;
+		height: 34px;
+		background: url("/icons/stack.svg#html-academy-icon") no-repeat center / contain;
 		// margin-left: auto; if j-c: s-b doesn't fit
 
 		@media #{$not-mobile} {

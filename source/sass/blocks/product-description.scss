@@ -40,16 +40,32 @@
 
 	&::before {
 		flex-shrink: 0;
-		content: "ic";
+		content: "";
 		width: 60px;
 		height: 60px;
-		background-color: #000000;
+		background: var(--bg-options-image, url("/icons/stack.svg#white-leaf")) no-repeat center / 32px 32px,
+			linear-gradient(
+				rgb(104 183 56 / 0.85),
+				rgb(104 183 56 / 0.85)
+			);
 
 		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 			margin-top: 40px;
 		}
+	}
+
+	&--second::before {
+		--bg-options-image: url("/icons/stack.svg#white-glass-of-product");
+	}
+
+	&--third::before {
+		--bg-options-image: url("/icons/stack.svg#white-fork-and-knife");
+	}
+
+	&--fourth::before {
+		--bg-options-image: url("/icons/stack.svg#white-clock");
 	}
 }
 

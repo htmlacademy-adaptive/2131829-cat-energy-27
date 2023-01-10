@@ -39,11 +39,8 @@
 		display: inline-block;
 		width: 50px;
 		height: 53px;
-		background-image: url("/img/cat_black_slim.png");
+		background: url("/icons/stack.svg#cat-slim-black-green-round") no-repeat center / contain;
 		margin-right: 19px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
 	}
 
 	@media #{$not-mobile} {
@@ -59,7 +56,7 @@
 
 .product-option-card__title--variant-muscular-cat::before {
 	width: 67px;
-	background-image: url("/img/cat_black_muscular.png");
+	background: url("/icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
 	margin-right: 11px;
 }
 
@@ -86,9 +83,9 @@
 		position: relative;
 		display: block;
 		content: "";
-		width: 32px;
-		height: 10px;
-		background-color: #000000;
+		width: 24px;
+		height: 12px;
+		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat center / contain;
 		margin-left: 15px;
 
 		@media #{$not-mobile} {
