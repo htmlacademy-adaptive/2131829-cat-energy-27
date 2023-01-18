@@ -1,4 +1,5 @@
 .button-primary {
+	box-sizing: border-box;
 	appearance: none;
 	text-decoration: none;
 	border: none;
@@ -7,6 +8,16 @@
 	font-family: var(--accent-font);
 	color: #ffffff;
 	background-color: #68b738;
-	padding: 7px 44px;
+	padding: 11px 44px;
 	display: block;
+	width: 280px;
+	// height: 40px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 20px;
+		width: 244px;
+		padding: 17px 26px;
+	}
 }

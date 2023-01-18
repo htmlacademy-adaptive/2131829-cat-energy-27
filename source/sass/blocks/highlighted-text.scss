@@ -4,8 +4,17 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #111111;
+	padding: 0;
 
 	&--light {
+		line-height: 14px;
+		font-size: 14px;
 		color: #ffffff;
+
+		@media #{$not-mobile} {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 20px;
+		}
 	}
 }

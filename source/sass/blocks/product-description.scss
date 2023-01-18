@@ -2,6 +2,14 @@
 	width: 100%;
 }
 
+.product-description__container {
+	padding-top: 3px;
+
+	@media #{$not-mobile} {
+		padding-top: 6px;
+	}
+}
+
 .product-description__list {
 	list-style: none;
 	margin: 0;
@@ -15,7 +23,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-auto-rows: minmax(280px, auto);
 		grid-row-gap: 37px;
-		grid-column-gap: 153px;
+		grid-column-gap: 55px;
 	}
 
 	@media #{$desktop-only} {
@@ -86,5 +94,6 @@
 
 	@media #{$not-mobile} {
 		margin-bottom: 57px;
+		max-width: 245px;
 	}
 }

@@ -4,14 +4,26 @@
 
 .main-content__promotion {
 	margin-bottom: 20px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 14px;
+	}
 }
 
 .main-content__product-options {
 	margin-bottom: 20px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 45px;
+	}
 }
 
 .main-content__product-description {
 	margin-bottom: 49px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 45px;
+	}
 }
 
 .main-content__products {

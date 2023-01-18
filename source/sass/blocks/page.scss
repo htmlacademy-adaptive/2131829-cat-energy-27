@@ -58,7 +58,7 @@
 	min-height: 100vh; //godlike gridstyle sticky-footer
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	background: hsl(0 0% 96%)  var(--bg-image) no-repeat center / contain;
+	// background: hsl(0 0% 96%)  var(--bg-image) no-repeat center / contain;
 
 	@include bg-image(test);
 }

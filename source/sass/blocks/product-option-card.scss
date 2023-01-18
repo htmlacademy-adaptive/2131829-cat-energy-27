@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	background-color: var(--second-bg-color);
-	padding: 30px 20px 20px 20px;
+	padding: 20px;
 	display: flex; //only for link
 	flex-direction: column;
 
@@ -27,9 +27,10 @@
 }
 
 .product-option-card__title {
+	position: relative;
 	margin: 0;
 	// margin-left: 69px;
-	margin-bottom: 29px;
+	margin-bottom: 23px;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -41,6 +42,15 @@
 		height: 53px;
 		background: url("/icons/stack.svg#cat-slim-black-green-round") no-repeat center / contain;
 		margin-right: 19px;
+		margin-left: 3px;
+
+		@media #{$not-mobile} {
+			position: absolute;
+			top: 3px;
+			right: -171px;
+			width: 200px;
+			height: 211px;
+		}
 	}
 
 	@media #{$not-mobile} {
@@ -54,24 +64,61 @@
 	}
 }
 
-.product-option-card__title--variant-muscular-cat::before {
-	width: 67px;
-	background: url("/icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
-	margin-right: 11px;
+.product-option-card__title--variant-muscular-cat {
+	margin-top: 5px;
+	margin-left: -8px;
+	margin-bottom: 20px;
+
+
+	@media #{$not-mobile} {
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+
+	&::before {
+		width: 67px;
+		background: url("/icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
+		margin-right: 11px;
+
+		@media #{$not-mobile} {
+			width: 268px;
+			height: 200px;
+			top: 13px;
+			right: -196px;
+		}
+	}
 }
 
+
 .product-option-card__text {
+	position: relative;
 	margin: 0;
-	margin-bottom: 38px;
+	margin-bottom: 41px;
 	padding: 0;
 	max-width: 466px;
 
 	@media #{$not-mobile} {
 		margin-bottom: 48px;
+		max-width: 340px;
 	}
 
 	@media #{$desktop-only} {
 		margin-bottom: 23px;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		height: 1px;
+		width: 100%;
+		background: #d9d9d9;
+		bottom: -23px;
+		left: 0;
+
+		@media #{$not-mobile} {
+			display: none;
+		}
 	}
 }
 
@@ -79,17 +126,24 @@
 	display: flex;
 	align-items: center;
 
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 4px;
+	}
+
 	&::after {
 		position: relative;
 		display: block;
 		content: "";
-		width: 24px;
+		width: 32px;
 		height: 12px;
-		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat center / contain;
-		margin-left: 15px;
+		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left -8px center / contain;
+		margin-left: 16px;
 
 		@media #{$not-mobile} {
-			margin-left: 25px;
+			margin-left: 27px;
 		}
 	}
 }

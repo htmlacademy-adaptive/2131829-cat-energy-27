@@ -4,7 +4,20 @@
 	line-height: 40px;
 	color: var(--second-text-color);
 
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 60px;
+		line-height: 60px;
+	}
+
 	&--light {
+		line-height: 36px;
 		color: #ffffff;
+
+		@media #{$not-mobile} {
+			font-weight: 400;
+			font-size: 60px;
+			line-height: 60px;
+		}
 	}
 }

@@ -1,10 +1,30 @@
 .product-result-example {
 	background-color: var(--second-bg-color);
+	position: relative;
+
+	@media #{$not-mobile} {
+		background-color: var(--main-bg-color);
+	}
+
+	&::before {
+		content: none;
+		height: 1px;
+		width: 100%;
+		background: #e6e6e6;
+
+
+		@media #{$tablet-only} {
+			content: "";
+			position: absolute;
+			top: 0;
+		}
+	}
 }
 
 .product-result-example__container {
 	display: flex;
 	flex-direction: column;
+	padding-top: 25px;
 
 	@media #{$desktop-only} {
 		flex-direction: row;
@@ -23,6 +43,10 @@
 	margin-bottom: 40px;
 	padding: 0;
 
+	@media #{$not-mobile} {
+		margin-top: 18px;
+	}
+
 	@media #{$desktop-only} {
 		margin-bottom: 146px;
 	}
@@ -32,6 +56,11 @@
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 0;
+
+	@media #{$not-mobile} {
+		margin-top: 63px;
+	}
+
 
 	@media #{$desktop-only} {
 		margin-bottom: 69px;

@@ -57,6 +57,7 @@
 		// align-items: start;
 		// padding-left: 87px;
 		display: grid;
+		padding: 0 88px;
 	}
 
 	@media #{$desktop-only} {
@@ -73,6 +74,9 @@
 
 .promotion__title {
 	text-align: center;
+	margin: 0;
+	margin-top: 27px;
+	padding: 0;
 
 	@media #{$not-mobile} {
 		text-align: start;
@@ -83,9 +87,11 @@
 .promotion__text {
 	padding: 0;
 	margin: 0;
+	margin-top: 25px;
 
 	@media #{$not-mobile} {
 		color: var(--second-text-color);
+		margin-top: 41px;
 	}
 }
 
@@ -129,7 +135,8 @@
 		grid-row: 3/4;
 		grid-column: 1/-1;
 		place-self: start;
-		margin-top: 29px;
+		margin-top: 49px;
+		margin-left: 3px;
 	}
 
 	@media #{$desktop-only} {

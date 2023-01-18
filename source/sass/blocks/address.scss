@@ -8,6 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 26px 0;
 
 	@media #{$desktop-only} {
 		position: absolute;
@@ -22,6 +23,7 @@
 
 .address__title {
 	width: 139px;
+	margin: 0;
 }
 
 .address__text {

@@ -1,7 +1,15 @@
 .subheading {
+	padding: 0;
 	font-family: var(--accent-font);
 	font-size: 24px;
 	line-height: 37px;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: var(--second-text-color);
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 36px;
+	}
 }
