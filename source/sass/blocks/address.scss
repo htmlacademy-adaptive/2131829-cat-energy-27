@@ -10,6 +10,10 @@
 	justify-content: space-between;
 	padding: 26px 0;
 
+	@media #{$not-mobile} {
+		padding: 60px 40px;
+	}
+
 	@media #{$desktop-only} {
 		position: absolute;
 		box-sizing: border-box;
@@ -24,10 +28,26 @@
 .address__title {
 	width: 139px;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		width: 200px;
+	}
 }
 
 .address__text {
 	font-style: inherit;
 	line-height: 20px;
 	width: 139px;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: end;
+		width: 160px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: -10px;
+	}
 }
