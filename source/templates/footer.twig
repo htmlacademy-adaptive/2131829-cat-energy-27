@@ -1,7 +1,9 @@
 <footer class="main-footer">
 	<div class="main-footer__container page__centerer">
 		<a class="main-footer__logo" href="index.html">
-			<img src="#" alt="Логотип.">
+			<svg class="main-footer__logo-img" role="img" aria-label="Логотип Cat Energy" focusable="false">
+				<use href="img/logo.svg#logo-text"></use>
+			</svg>
 		</a>
 		<ul class="main-footer__socials socials">
 			{% for social in socials %}

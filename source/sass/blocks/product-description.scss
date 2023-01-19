@@ -1,5 +1,6 @@
 .product-description {
 	width: 100%;
+	counter-reset: item-number;
 }
 
 .product-description__container {
@@ -39,11 +40,31 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	counter-increment: item-number;
+	position: relative;
 
 	@media #{$not-mobile} {
 		flex-direction: column;
 		align-items: start;
 		gap: 31px;
+	}
+
+	&::after {
+		display: none;
+		z-index: -1;
+
+		@media #{$not-mobile} {
+			display: block;
+			content: counter(item-number);
+			font-family: var(--accent-font);
+			font-weight: 400;
+			font-size: 280px;
+			line-height: 280px;
+			color: #f2f2f2;
+			position: absolute;
+			right: 0;
+			width: 134px;
+		}
 	}
 
 	&::before {
