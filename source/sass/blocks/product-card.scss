@@ -10,9 +10,21 @@
 	grid-template-columns: 1fr 1fr;
 	// grid-template-rows: 147px 64px;
 	// grid-template-rows: 1fr 1fr 1fr;
-	padding: 22px 0;
+	padding: 22px 0 24px 0;
 	row-gap: 5px;
+	position: relative;
 
+	&::after {
+		@media #{$mobile-only} {
+			content: "";
+			background-color: #ebebeb;
+			height: 1px;
+			width: 100vw;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 50vw);
+		}
+	}
 
 	@media #{$not-mobile} {
 		// width: 324px;
@@ -57,9 +69,9 @@
 	align-self: center;
 }
 
-// .product-card__image {
-// 	justify-self: center;
-// }
+.product-card__image {
+	margin-top: 10px;
+}
 
 // .product-card picture {
 // 	order: 3;
