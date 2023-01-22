@@ -9,6 +9,12 @@
 	background-color: #ffffff;
 	width: 100%;
 
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
 	@media #{$desktop-only} {
 		background: none;
 	}
@@ -22,8 +28,8 @@
 
 .main-navigation__toggle {
 	position: absolute;
-	top: -46px;
-	right: 24px;
+	top: -45px;
+	right: 20px;
 	width: 24px;
 	height: 16px;
 	appearance: none;
@@ -42,20 +48,21 @@
 	}
 }
 
+
+.main-navigation__toggle::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url("/icons/stack.svg#cross") no-repeat center / contain;
+}
+
 .main-navigation--closed .main-navigation__toggle::before {
 	content: "";
 	display: block;
 	width: 24px;
 	height: 24px;
 	background: url("/icons/stack.svg#burger") no-repeat center / contain;
-}
-
-.main-navigation--opened .main-navigation__toggle::before {
-	content: "";
-	display: block;
-	width: 24px;
-	height: 24px;
-	background: url("/icons/stack.svg#cross") no-repeat center / contain;
 }
 
 // .main-navigation--closed .main-navigation__toggle::before {

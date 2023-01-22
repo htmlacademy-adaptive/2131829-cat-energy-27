@@ -6,7 +6,7 @@
 	z-index: 3;
 
 	@media #{$mobile-only} {
-		min-height: 66px;
+		min-height: 65px;
 	}
 }
 
@@ -14,14 +14,19 @@
 	@media #{$not-mobile} {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 10px;
-		padding-bottom: 17px;
+		padding-top: 28px;
+		padding-bottom: 43px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 55px;
+		padding-bottom: 0;
 	}
 }
 
 .main-header__navigation {
 	position: absolute;
-	top: 66px;
+	top: 64px;
 	right: 0;
 
 	@media #{$not-mobile} {
@@ -31,6 +36,52 @@
 
 .main-header__logo {
 	text-decoration: none;
+	display: flex;
+	margin: 10px 0;
+	gap: 50px;
+
+	@media #{$not-mobile} {
+		gap: 12px;
+		min-width: 174px;
+		margin-top: 0;
+		margin-bottom: 0;
+		align-items: center;
+	}
+}
+
+.main-header__logo-icon {
+	display: block;
+	object-fit: fill;
+	margin-left: -3px;
+	margin-right: 1px;
+
+	@media #{$not-mobile} {
+		width: 61px;
+		height: 51px;
+		margin: 0;
+	}
+
+	@media #{$desktop-only} {
+		width: 70px;
+		height: 59px;
+	}
+}
+
+.main-header__logo-name {
+	display: block;
+	object-fit: fill;
+	margin-top: 6px;
+
+	@media #{$not-mobile} {
+		width: 102px;
+		height: 19px;
+		margin-top: 0;
+	}
+
+	@media #{$desktop-only} {
+		width: 118px;
+		height: 22px;
+	}
 }
 
 // .main-header__logo-name {

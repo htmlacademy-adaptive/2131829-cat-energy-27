@@ -4,7 +4,7 @@
 	// background-color: rgb(104 183 56 / 0.85);
 	@media #{$desktop-only} {
 		position: unset;
-		min-height: 675px;
+		min-height: 662px;
 	}
 
 	&::before {
@@ -91,6 +91,10 @@
 		margin-left: 86px;
 		margin-top: 18px;
 	}
+
+	@media #{$desktop-only} {
+		margin-top: 15px;
+	}
 }
 
 .promotion__text {
@@ -134,8 +138,8 @@
 		width: 552px;
 		height: 499px;
 		position: absolute;
-		top: 40px;
-		left: 538px;
+		top: 28px;
+		left: 448px;
 	}
 }
 
