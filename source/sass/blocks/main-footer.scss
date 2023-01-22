@@ -17,6 +17,10 @@
 		grid-template-columns: repeat(3, 1fr);
 		padding: 40px 0;
 	}
+
+	@media #{$desktop-only} {
+		padding-top: 50px;
+	}
 }
 
 .main-footer__logo {
@@ -25,6 +29,7 @@
 	@media #{$not-mobile} {
 		margin: 0;
 		margin-right: auto;
+		display: block;
 	}
 }
 
@@ -35,6 +40,8 @@
 	@media #{$not-mobile} {
 		width: 142px;
 		height: 26px;
+		display: block;
+		padding-top: 5px;
 	}
 }
 
@@ -44,6 +51,7 @@
 
 .main-footer__copyright {
 	margin: 0 auto;
+	padding-top: 10px;
 
 	@media #{$not-mobile} {
 		margin: 0;

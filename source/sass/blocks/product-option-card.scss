@@ -12,7 +12,7 @@
 
 	@media #{$desktop-only} {
 		width: calc(50% - 40px);
-		padding: 77px 52px 55px 52px;
+		padding: 41px 52px 60px 52px;
 	}
 }
 
@@ -35,6 +35,15 @@
 	display: flex;
 	align-items: center;
 
+	@media #{$not-mobile} {
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 38px;
+	}
+
 	&::before {
 		content: "";
 		display: inline-block;
@@ -51,16 +60,15 @@
 			width: 200px;
 			height: 211px;
 		}
-	}
 
-	@media #{$not-mobile} {
-		margin-left: 0;
-		margin-bottom: 24px;
-	}
-
-	@media #{$desktop-only} {
-		margin-left: 162px;
-		margin-bottom: 73px;
+		@media #{$desktop-only} {
+			position: unset;
+			width: 100px;
+			height: 106px;
+			margin: 0;
+			margin-right: 62px;
+			// background-position: left;
+		}
 	}
 }
 
@@ -75,6 +83,10 @@
 		margin-bottom: 24px;
 	}
 
+	@media #{$desktop-only} {
+		margin-bottom: 40px;
+	}
+
 	&::before {
 		width: 67px;
 		background: url("/icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
@@ -85,6 +97,17 @@
 			height: 200px;
 			top: 13px;
 			right: -298px;
+		}
+
+		@media #{$desktop-only} {
+			// position: unset;
+			width: 134px;
+			height: 100px;
+			margin-left: -18px;
+			margin-right: 47px;
+			// margin: 0;
+			// margin-right: 62px;
+			// // background-position: left;
 		}
 	}
 }
@@ -104,6 +127,7 @@
 
 	@media #{$desktop-only} {
 		margin-bottom: 23px;
+		max-width: unset;
 	}
 
 	&::after {

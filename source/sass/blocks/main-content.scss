@@ -6,7 +6,11 @@
 	margin-bottom: 20px;
 
 	@media #{$not-mobile} {
-		margin-bottom: 14px;
+		margin-bottom: -6px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 0;
 	}
 }
 
@@ -16,6 +20,10 @@
 	@media #{$not-mobile} {
 		margin-bottom: 45px;
 	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 65px;
+	}
 }
 
 .main-content__product-description {
@@ -23,6 +31,16 @@
 
 	@media #{$not-mobile} {
 		margin-bottom: 45px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 25px;
+	}
+}
+
+.main-content__product-result-example {
+	@media #{$desktop-only} {
+		margin-bottom: 3px;
 	}
 }
 

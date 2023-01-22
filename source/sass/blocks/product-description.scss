@@ -32,7 +32,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-auto-rows: minmax(280px, auto);
 		grid-row-gap: 37px;
-		grid-column-gap: 94px;
+		grid-column-gap: 78px;
 	}
 }
 
@@ -42,6 +42,7 @@
 	gap: 20px;
 	counter-increment: item-number;
 	position: relative;
+	z-index: 1;
 
 	@media #{$not-mobile} {
 		flex-direction: column;
