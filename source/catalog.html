@@ -9,8 +9,10 @@
 		<ul class="products__list">
 			{% for productCard in productCards %}
 			<li class="products__item product-card">
-				<a class="product-card__link" href="#">
+				<a class="product-card__link-title" href="#">
 					<h3 class="product-card__title">{{ productCard.title }}</h3>
+				</a>
+				<a class="product-card__link-image" href="#">
 					{% set imageName = productCard.imageName %}
 					{% include "./templates/picture.twig" with {name: imageName, class: "product-card__image", alt: "Коробка с кормом."} %}
 				</a>
@@ -28,7 +30,7 @@
 						<dd class="product-card-parameters-list__parameter-value">{{ productCard.parameterValue[2] }}</dd>
 					</div>
 				</dl>
-				<a class="product-card__button button-primary" href="form.html">Заказать</a>
+				<a class="product-card__button button-primary button-primary--catalog" href="form.html">Заказать</a>
 			</li>
 			{% endfor %}
 			<li class="products__item product-card show-all">
