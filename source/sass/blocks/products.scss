@@ -31,7 +31,7 @@
 	margin: 0;
 	padding: 0;
 	display: grid;
-	row-gap: 19px;
+	// row-gap: 19px;
 	grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
 	column-gap: clamp(60px, 30px + 100vw / 25.6, 80px);
 

@@ -13,6 +13,7 @@
 	padding: 22px 0 24px 0;
 	row-gap: 5px;
 	position: relative;
+	min-height: 190px;
 
 	&::after {
 		@media #{$mobile-only} {
@@ -67,10 +68,12 @@
 	grid-row: 1/3;
 	justify-self: center;
 	align-self: center;
+	display: block;
 }
 
 .product-card__image {
 	margin-top: 10px;
+	display: block;
 }
 
 // .product-card picture {
