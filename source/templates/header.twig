@@ -1,7 +1,11 @@
 	<header class="main-header">
 		<div class="main-header__container page__centerer">
 			<a class="main-header__logo" href="index.html">
-				<img class="main-header__logo-icon" src="img/logo.svg#logo-icon" width="40" height="40" alt="Пес-супергерой в маске."/>
+				<picture>
+					<source media="(min-width: 1280px)" srcset="img/logo.svg#logo-icon-desktop" width="71" height="59">
+					<source media="(min-width: 768px)" srcset="img/logo.svg#logo-icon-tablet" width="61" height="51">
+					<img class="main-header__logo-icon"  src="img/logo.svg#logo-icon" width="40" height="40" alt="Логотип компании.">
+				</picture>
 				<img class="main-header__logo-name" src="img/logo.svg#logo-text" width="102" height="19" alt="Логотип компании."/>
 			</a>
 			<nav class="main-header__navigation main-navigation main-navigation--closed  main-navigation--nojs">

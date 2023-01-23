@@ -12,7 +12,7 @@
 				<a class="product-card__link-title" href="#">
 					<h3 class="product-card__title">{{ productCard.title }}</h3>
 				</a>
-				<a class="product-card__link-image" href="#">
+				<a class="product-card__link-image {% if productCard.imageName == "can-pro-chicken-500"%}product-card__link-image--shifted{% endif %}" href="#">
 					{% set imageName = productCard.imageName %}
 					{% include "./templates/picture.twig" with {name: imageName, class: "product-card__image", alt: "Коробка с кормом."} %}
 				</a>

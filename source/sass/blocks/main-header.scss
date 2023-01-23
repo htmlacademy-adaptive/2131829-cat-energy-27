@@ -26,7 +26,7 @@
 		display: flex;
 		justify-content: space-between;
 		padding-top: 28px;
-		padding-bottom: 43px;
+		padding-bottom: 45px;
 	}
 
 	@media #{$desktop-only} {
@@ -58,6 +58,10 @@
 		margin-bottom: 0;
 		align-items: center;
 	}
+
+	@media #{$desktop-only} {
+		min-width: 202px;
+	}
 }
 
 .main-header__logo-icon {
@@ -70,6 +74,7 @@
 		width: 61px;
 		height: 51px;
 		margin: 0;
+		margin-top: -2px;
 	}
 
 	@media #{$desktop-only} {
@@ -92,6 +97,7 @@
 	@media #{$desktop-only} {
 		width: 118px;
 		height: 22px;
+		margin-top: 3px;
 	}
 }
 
