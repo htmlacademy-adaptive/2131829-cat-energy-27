@@ -10,3 +10,19 @@
 		gap: 22px;
 	}
 }
+
+.additional-products-list__item {
+	position: relative;
+
+	&::after {
+		@media #{$mobile-only} {
+			content: "";
+			background-color: #ebebeb;
+			height: 1px;
+			width: 100%;
+			position: absolute;
+			bottom: -19px;
+			left: 0;
+		}
+	}
+}

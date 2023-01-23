@@ -14,6 +14,25 @@
 	position: relative;
 	min-height: 190px;
 
+	@media #{$not-mobile} {
+		min-width: 324px;
+		min-height: 511px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 206px 88px 97px 73px;
+		justify-content: end;
+		align-items: center;
+		padding: 8px 36px 39px 36px;
+		// background-color: var(--second-bg-color);
+		background-repeat: no-repeat;
+		background-image: linear-gradient(var(--second-bg-color), var(--second-bg-color));
+		background-size: 100% 84%;
+		background-position: 0 100%;
+	}
+
+	@media #{$desktop-only} {
+		width: 245px;
+	}
+
 	&::after {
 		@media #{$mobile-only} {
 			content: "";
@@ -24,18 +43,6 @@
 			bottom: 0;
 			left: calc(50% - 50vw);
 		}
-	}
-
-	@media #{$not-mobile} {
-		// width: 324px;
-		display: flex;
-		flex-direction: column;
-		background-color: var(--second-bg-color);
-		padding: 39px;
-	}
-
-	@media #{$desktop-only} {
-		width: 245px;
 	}
 }
 
@@ -52,6 +59,14 @@
 	grid-column: 2/3;
 	display: block;
 	// margin-bottom: 18px;
+	@media #{$not-mobile} {
+		grid-row: 2/3;
+		grid-column: 1/2;
+		display: flex;
+		justify-content: center;
+		// align-self: end;
+		margin-top: 6px;
+	}
 }
 
 .product-card__title {
@@ -60,6 +75,17 @@
 	font-size: 16px;
 	font-weight: 400;
 	max-width: 76px;
+
+	@media #{$not-mobile} {
+		max-width: 154px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		// margin-bottom: 10px;
+		// padding-bottom: 2px;
+		margin-top: 10px;
+	}
 }
 
 .product-card__link-image {
@@ -72,11 +98,24 @@
 	height: 105px;
 	width: 84px;
 	padding-bottom: 2px;
+
+	@media #{$not-mobile} {
+		grid-row: 1/2;
+		width: 168px;
+		height: 206px;
+		align-self: flex-start;
+	}
 }
 
 .product-card__link-image--shifted {
 	height: 100px;
 	padding-bottom: 7px;
+
+	@media #{$not-mobile} {
+		height: unset;
+		padding-bottom: unset;
+		padding-top: 30px;
+	}
 }
 
 .product-card__image {
@@ -125,6 +164,14 @@
 	grid-row: 2/3;
 	grid-column: 2/3;
 	margin-top: -6px;
+
+	@media #{$not-mobile} {
+		margin-top: 0;
+		margin-bottom: -2px;
+		grid-column: 1/2;
+		grid-row: 3/4;
+		align-self: flex-start;
+	}
 }
 
 // .product-card-parameters-list__parameter-value :nth-last-child() {
@@ -135,4 +182,11 @@
 	grid-row: 3/4;
 	grid-column: 1/-1;
 	margin-top: 16px;
+
+	@media #{$not-mobile} {
+		grid-row: 4/5;
+		align-self: flex-end;
+		width: 100%;
+		margin-top: 0;
+	}
 }
