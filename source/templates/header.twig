@@ -15,7 +15,7 @@
 				<ul class="main-navigation__list site-list">
 					{% for page in pages %}
 					<li class="site-list__item">
-						<a class="site-list__link" href="{{ page.path }}" {% if permalink == page.path %}aria-current="page"{% endif %} >{{ page.name }}</a>
+						<a class="site-list__link {% if permalink == "index.html" %}site-list__link--light{% endif %}" href="{{ page.path }}" {% if permalink == page.path %}aria-current="page"{% endif %} >{{ page.name }}</a>
 					</li>
 					{% endfor %}
 				</ul>

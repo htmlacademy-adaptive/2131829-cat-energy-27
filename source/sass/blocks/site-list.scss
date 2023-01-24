@@ -53,15 +53,35 @@
 			width: 100%;
 			bottom: 0;
 		}
-
-		@media #{$desktop-only} {
-			background-color: #ffffff;
-		}
 	}
 
 	@media #{$desktop-only} {
-		color: #ffffff;
+		color: #111111;
 		font-size: 20px;
 		line-height: 30px;
+	}
+
+	// &--light {
+	// 	@media #{$desktop-only} {
+	// 		color: #ffffff;
+	// 	}
+
+	// 	&[aria-current="page"]::before {
+	// 		@media #{$desktop-only} {
+	// 			background-color: #ffffff;
+	// 		}
+	// 	}
+	// }
+}
+
+.site-list__link--light {
+	@media #{$desktop-only} {
+		color: #ffffff;
+	}
+
+	&[aria-current="page"]::before {
+		@media #{$desktop-only} {
+			background-color: #ffffff;
+		}
 	}
 }
