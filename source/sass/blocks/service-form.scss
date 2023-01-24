@@ -6,7 +6,7 @@
 
 .service-form__fieldset {
 	border: none;
-	margin-bottom: 46px;
+	// margin-bottom: 22px;
 }
 
 .service-form__note {
@@ -15,6 +15,10 @@
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	margin-top: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
 
 	@media #{$not-mobile} {
 		text-align: start;
@@ -37,6 +41,10 @@
 }
 
 .service-form__button {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
 	@media #{$not-mobile} {
 		width: 282px;
 	}

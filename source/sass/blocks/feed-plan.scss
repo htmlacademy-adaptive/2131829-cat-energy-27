@@ -1,12 +1,27 @@
 .feed-plan {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	margin: 0;
+	margin-bottom: 27px;
 	padding: 0;
-	gap: 13px;
+	padding-bottom: 19px;
+	display: grid;
+	row-gap: 13px;
+	grid-auto-rows: 30px;
+	position: relative;
 
 	@media #{$desktop-only} {
 		max-width: 568px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 100vw;
+		background-color: #d9d9d9;
+		bottom: 0;
+		left: calc(100% - 100vw + 20px);
 	}
 }
 

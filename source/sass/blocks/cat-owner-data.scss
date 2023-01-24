@@ -1,5 +1,6 @@
 .cat-owner-data {
 	margin: 0;
+	margin-bottom: 10px;
 	padding: 0;
 }
 
@@ -30,6 +31,7 @@
 	max-width: 187px;
 	margin-bottom: 35px;
 
+
 	@media #{$not-mobile} {
 		max-width: unset;
 		margin-bottom: 76px;
@@ -43,17 +45,32 @@
 .cat-owner-data__input {
 	position: relative;
 	flex-grow: 2;
-	// z-index: 0;
+	padding-right: 20px;
+}
 
-	&::after {
-		content: "";
-		position: absolute;
-		display: block;
-		// z-index: 1;
-		top: 0;
-		right: 12px;
-		width: 20px;
-		height: 20px;
-		background: url("/icons/stack.svg#mail-icon") no-repeat center / contain;
+.cat-owner-data__input-icon { //cat-owner-data__mail-icon
+	// content: "";
+	width: 20px;
+	height: 20px;
+	mask: url("/icons/stack.svg#mail-icon") no-repeat center / contain;
+	background: currentColor;
+
+	position: absolute;
+	right: 35px;
+
+	// &:focus {
+	// 	background: #68b738;
+	// }
+
+	&--phone-icon {
+		mask: url("/icons/stack.svg#phone-icon") no-repeat center / contain;
 	}
+}
+
+.cat-owner-data__input:focus + .cat-owner-data__input-icon {
+	background: #68b738;
+}
+
+.cat-owner-data__input:not(:placeholder-shown, :focus):invalid + .cat-owner-data__input-icon {
+	background: #ff8282;
 }

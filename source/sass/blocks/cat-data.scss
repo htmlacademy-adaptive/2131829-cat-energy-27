@@ -1,10 +1,27 @@
 .cat-data {
 	margin: 0;
+	margin-bottom: 22px;
 	// margin-bottom: 24px;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
+	// display: flex;
+	// flex-direction: column;
+	// gap: 14px;
+	display: grid;
+	row-gap: 14px;
+	grid-template-columns: 280px;
+	padding-bottom: 24px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 100vw;
+		background-color: #d9d9d9;
+		bottom: 0;
+		left: calc(100% - 100vw + 20px);
+	}
+
 
 	@media #{$not-mobile} {
 		gap: 20px;
@@ -25,6 +42,6 @@
 	margin-right: 13px;
 }
 
-.input-text-field {
-	flex-grow: 2;
+.cat-data__input.cat-data__input {
+	padding-right: 10px;
 }

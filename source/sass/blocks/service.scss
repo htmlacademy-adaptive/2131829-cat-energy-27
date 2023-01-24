@@ -6,8 +6,12 @@
 .service__title {
 	margin: 0;
 	margin-top: 27px;
-	margin-bottom: 37px;
+	margin-bottom: 38px;
 	padding: 0;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
 
 	@media #{$not-mobile} {
 		margin-bottom: 54px;
@@ -20,8 +24,11 @@
 
 .service__text {
 	margin: 0;
-	margin-bottom: 39px;
+	margin-bottom: 38px;
 	padding: 0;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
 
 	@media #{$not-mobile} {
 		margin-bottom: 66px;
