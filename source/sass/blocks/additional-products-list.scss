@@ -9,6 +9,11 @@
 	@media #{$not-mobile} {
 		gap: 0;
 	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-auto-rows: 72px;
+	}
 }
 
 .additional-products-list__item {

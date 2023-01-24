@@ -14,6 +14,7 @@
 	@media #{$desktop-only} {
 		flex-direction: row;
 		flex-wrap: wrap;
+		margin-top: 50px;
 	}
 }
 
@@ -50,6 +51,13 @@
 		padding-bottom: 8px;
 	}
 
+	@media #{$desktop-only} {
+		margin-left: -16px;
+		// display: block;
+		flex-grow: unset;
+		margin-bottom: 14px;
+	}
+
 	&::after {
 		@media #{$mobile-only} {
 			content: "";
@@ -74,6 +82,7 @@
 
 	@media #{$desktop-only} {
 		margin-bottom: 0;
+		margin-top: 59px;
 	}
 }
 
@@ -85,5 +94,6 @@
 	@media #{$desktop-only} {
 		margin: 0 auto;
 		margin-left: 80px;
+		align-self: flex-end;
 	}
 }

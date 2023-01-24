@@ -52,6 +52,10 @@
 	@media #{$not-mobile} {
 		margin-bottom: 41px;
 	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 86px;
+	}
 }
 
 .main-content__service {

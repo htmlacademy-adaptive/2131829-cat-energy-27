@@ -22,6 +22,11 @@
 			height: 60px;
 			margin-top: 126px;
 		}
+
+
+		@media #{$desktop-only} {
+			margin-top: 140px;
+		}
 	}
 }
 

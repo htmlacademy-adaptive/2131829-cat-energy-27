@@ -30,7 +30,11 @@
 	}
 
 	@media #{$desktop-only} {
-		width: 245px;
+		min-width: unset;
+		max-width: 245px;
+		grid-template-rows: 206px 104px 97px 73px;
+		padding: 8px 38px 39px 39px;
+		background-size: 100% 81.5%;
 	}
 
 	&::after {
@@ -66,6 +70,10 @@
 		justify-content: center;
 		// align-self: end;
 		margin-top: 6px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 20px;
 	}
 }
 

@@ -20,10 +20,13 @@
 
 	@media #{$desktop-only} {
 		position: absolute;
+		align-items: unset;
 		box-sizing: border-box;
+		justify-content: unset;
 		width: 565px;
+		min-height: 198px;
 		background-color: #ffffff;
-		padding: 60px 78px;
+		padding: 56px 80px 40px 80px;
 		top: 95px;
 		left: calc(50vw - 610px); //move from center of view port on half page minus margin
 	}
@@ -35,6 +38,10 @@
 
 	@media #{$not-mobile} {
 		width: 200px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 5px;
 	}
 }
 
@@ -57,5 +64,10 @@
 
 	@media #{$desktop-only} {
 		text-align: start;
+		word-wrap: break-word;
+		width: 120px;
+		gap: 0;
+		margin-left: 50px;
+		margin-top: 0;
 	}
 }
