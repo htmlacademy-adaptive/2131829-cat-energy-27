@@ -146,6 +146,10 @@
 .promotion__button {
 	order: 1;
 
+	@media #{$mobile-only} {
+		width: 100%;
+	}
+
 	@media #{$not-mobile} {
 		// position: absolute;
 		// top: 200px;
@@ -166,5 +170,6 @@
 		margin-top: 52px;
 		margin-left: 0;
 		justify-self: start;
+		max-width: 244px;
 	}
 }

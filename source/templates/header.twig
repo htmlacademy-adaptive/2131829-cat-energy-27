@@ -1,4 +1,4 @@
-	<header class="main-header">
+	<header class="main-header {% if permalink == "index.html" %}main-header--no-underline{% endif %}">
 		<div class="main-header__container page__centerer">
 			<a class="main-header__logo" href="index.html">
 				<picture>
@@ -8,7 +8,7 @@
 				</picture>
 				<img class="main-header__logo-name" src="img/logo.svg#logo-text" width="102" height="19" alt="Логотип компании."/>
 			</a>
-			<nav class="main-header__navigation main-navigation main-navigation--closed  main-navigation--nojs">
+			<nav class="main-header__navigation main-navigation main-navigation--nojs">
 				<button class="main-navigation__toggle" type="button">
 					<span class="visually-hidden">Открыть меню.</span>
 				</button>

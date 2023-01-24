@@ -1,0 +1,47 @@
+.proof {
+	position: relative;
+	display: grid;
+	gap: 20px;
+	padding: 100px 0;
+
+	@media #{$mobile-only} {
+		padding-top: 25px;
+		padding-bottom: 40px;
+	}
+
+	@media (min-width: 768px) {
+		--bg-top-shift: calc(100% - 462px);
+		gap: 75px;
+		padding-top: 25px;
+		padding-bottom: 100px;
+	}
+
+	@media (min-width: 1280px) {
+		--bg-top-shift: 180px;
+		grid-template-columns: auto 560px;
+		gap: 224px;
+		padding-bottom: 26px;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: 0;
+		top: var(--bg-top-shift, 0);
+		width: 100vw;
+		background-color: hsl(0 0% 92%);
+		box-shadow: 100vw 0 0 0 hsl(0 0% 92%);
+	}
+}
+
+.proof__compare {
+	margin: 0;
+	align-self: start;
+	justify-self: center;
+
+	@media #{$desktop-only} {
+		margin-top: 20px;
+	}
+}
