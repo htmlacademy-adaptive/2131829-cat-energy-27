@@ -48,6 +48,12 @@
 	margin-bottom: 25px;
 }
 
+.main-content__additional-products {
+	@media #{$not-mobile} {
+		margin-bottom: 41px;
+	}
+}
+
 .main-content__service {
 	margin-bottom: 82px;
 }

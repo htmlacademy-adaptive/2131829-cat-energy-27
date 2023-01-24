@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
+
+	@media #{$not-mobile} {
+		background-color: #f2f2f2;
+	}
 }
 
 .address__container {

@@ -1,3 +1,25 @@
 .additional-product-card-amount-wrapper {
 	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
+	@media #{$not-mobile} {
+		min-width: 225px;
+		justify-content: flex-end;
+	}
+
+	@media #{$desktop-only} {
+		width: 285px;
+		justify-content: space-between;
+	}
+}
+
+.additional-product-card-amount-wrapper__item {
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+	}
 }

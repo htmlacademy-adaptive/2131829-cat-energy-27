@@ -3,10 +3,9 @@
 	background-color: var(--second-bg-color);
 	padding-top: 23px;
 
-	// @media #{$not-mobile} {
-	// 	box-sizing: border-box;
-	// 	min-height: 147px;
-	// }
+	@media #{$not-mobile} {
+		padding-top: 0;
+	}
 }
 
 .main-footer__container {
