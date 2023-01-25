@@ -10,6 +10,17 @@
 	height: 45px;
 	flex-grow: 2;
 
+	&[type="number"] {
+		appearance: textfield;
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			appearance: none;
+			margin: 0;
+		}
+	}
+
+
 	@media #{$not-mobile} {
 		font-weight: 400;
 		font-size: 20px;

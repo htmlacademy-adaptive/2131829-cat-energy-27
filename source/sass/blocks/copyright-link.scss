@@ -1,3 +1,18 @@
+.copyright-link__title {
+	margin: 0;
+	padding: 0;
+
+	@media #{$not-mobile} {
+		margin-right: 5px;
+		margin-top: -1px;
+	}
+
+	// &:active {
+	// 	color: #444444;
+	// 	opacity: 0.3;
+	// }
+}
+
 .copyright-link {
 	text-decoration: none;
 	font-family: var(--main-font);
@@ -46,19 +61,4 @@
 		opacity: 0.3;
 		background: #68b738;
 	}
-}
-
-.copyright-link__title {
-	margin: 0;
-	padding: 0;
-
-	@media #{$not-mobile} {
-		margin-right: 5px;
-		margin-top: -1px;
-	}
-
-	// &:active {
-	// 	color: #444444;
-	// 	opacity: 0.3;
-	// }
 }

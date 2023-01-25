@@ -3,9 +3,17 @@
 	flex-direction: column;
 	align-items: center;
 	min-height: 158px;
+	background-image: unset;
 
 	@media #{$not-mobile} {
 		align-self: flex-start;
+		outline: 2px solid #f2f2f2;
+		outline-offset: -2px;
+		margin-top: 81px;
+	}
+
+	@media #{$not-mobile} {
+		margin-top: 100px;
 	}
 
 	&::before {
@@ -20,12 +28,12 @@
 		@media #{$not-mobile} {
 			width: 60px;
 			height: 60px;
-			margin-top: 126px;
+			margin-top: 45px;
 		}
 
 
 		@media #{$desktop-only} {
-			margin-top: 140px;
+			margin-top: 40px;
 		}
 	}
 }
