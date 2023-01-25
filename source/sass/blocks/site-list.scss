@@ -1,5 +1,4 @@
 .site-list {
-	// display: none;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -72,17 +71,6 @@
 		outline: none;
 		opacity: 0.3;
 	}
-	// &--light {
-	// 	@media #{$desktop-only} {
-	// 		color: #ffffff;
-	// 	}
-
-	// 	&[aria-current="page"]::before {
-	// 		@media #{$desktop-only} {
-	// 			background-color: #ffffff;
-	// 		}
-	// 	}
-	// }
 }
 
 .site-list__link--light {

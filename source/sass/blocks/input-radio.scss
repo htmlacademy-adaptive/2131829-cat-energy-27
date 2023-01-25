@@ -8,7 +8,6 @@
 	height: 2.1em;
 	border: 0.1em solid #cdcdcd;
 	border-radius: 50%;
-	// transform: translateY(-1.05em);
 	display: grid;
 	place-content: center;
 
@@ -20,10 +19,6 @@
 		border-color: #bababa;
 		opacity: 0.3;
 	}
-
-	// &:disabled:checked::before {
-	// 	opacity: 0.3;
-	// }
 
 	@media #{$not-mobile} {
 		width: 40px;

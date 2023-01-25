@@ -2,7 +2,6 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	// margin-bottom: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	row-gap: 20px;
@@ -17,7 +16,6 @@
 	@media #{$desktop-only} {
 		display: flex;
 		flex-wrap: wrap;
-		// justify-content: center;
 	}
 }
 
@@ -72,8 +70,6 @@
 		line-height: 14px;
 		width: 130px;
 		padding: 0 6px;
-		// position: unset;
-		// grid-row: 2/3;
 		bottom: 26px;
 		left: 50%;
 		transform: translateX(-50%);
@@ -93,7 +89,6 @@
 	position: static;
 	width: unset;
 	padding: 0;
-	// margin-left: 46px;
 	display: inline;
 
 	@media #{$not-mobile} {
@@ -109,6 +104,8 @@
 	font-family: var(--accent-font);
 	font-size: 24px;
 	line-height: 24px;
+	margin: 0;
+	padding: 0;
 	width: 124px;
 	height: 56px;
 	display: flex;

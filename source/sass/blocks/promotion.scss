@@ -1,7 +1,6 @@
 .promotion {
 	position: relative;
-	// background-image: url("/img/grey-cat-licking.jpg");
-	// background-color: rgb(104 183 56 / 0.85);
+
 	@media #{$desktop-only} {
 		position: unset;
 		min-height: 662px;
@@ -34,7 +33,6 @@
 
 		@media #{$desktop-only} {
 			--bg-positionX: left;
-			// --bg-positionY: top;
 			--bg-size: 1044px 696px;
 			width: auto;
 			height: 696px;
@@ -53,11 +51,7 @@
 
 
 	@media #{$not-mobile} {
-		// position: relative;
-		// align-items: start;
-		// padding-left: 87px;
 		display: grid;
-		// padding: 0 88px;
 	}
 
 	@media #{$desktop-only} {
@@ -130,8 +124,6 @@
 		margin-top: 0;
 		width: 709px;
 		height: 609px;
-		// grid-row: 3/4;
-		// grid-column: 1/-1;
 	}
 
 	@media #{$desktop-only} {
@@ -151,9 +143,6 @@
 	}
 
 	@media #{$not-mobile} {
-		// position: absolute;
-		// top: 200px;
-		// left: 87px;
 		grid-row: 3/4;
 		grid-column: 1/-1;
 		place-self: start;

@@ -33,21 +33,17 @@
 		content: "";
 		width: 32px;
 		height: 12px;
-		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left -8px center / contain;
+		background: url("../../icons/stack.svg#black-arrow-to-right") no-repeat left -8px center / contain;
 		margin-left: 16px;
 
 		@media #{$not-mobile} {
 			margin-left: 27px;
 		}
 	}
-
-	// &:hover::after {
-	// 	background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left 0 center / contain;
-	// }
 }
 
 .product-option-card__link {
-	margin-top: auto; // to make link invulnerable to no text
+	margin-top: auto;
 	font-family: var(--accent-font);
 	font-size: 16px;
 	line-height: 16px;
@@ -56,7 +52,7 @@
 	text-transform: uppercase;
 
 	&:hover .product-option-card__link-text::after {
-		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left 0 center / contain;
+		background: url("../../icons/stack.svg#black-arrow-to-right") no-repeat left 0 center / contain;
 	}
 
 	&:active {
@@ -67,7 +63,6 @@
 .product-option-card__title {
 	position: relative;
 	margin: 0;
-	// margin-left: 69px;
 	margin-bottom: 23px;
 	padding: 0;
 	display: flex;
@@ -87,7 +82,7 @@
 		display: inline-block;
 		width: 50px;
 		height: 53px;
-		background: url("/icons/stack.svg#cat-slim-black-green-round") no-repeat center / contain;
+		background: url("../../icons/stack.svg#cat-slim-black-green-round") no-repeat center / contain;
 		margin-right: 19px;
 		margin-left: 3px;
 
@@ -105,7 +100,6 @@
 			height: 106px;
 			margin: 0;
 			margin-right: 62px;
-			// background-position: left;
 		}
 	}
 }
@@ -127,7 +121,7 @@
 
 	&::before {
 		width: 67px;
-		background: url("/icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
+		background: url("../../icons/stack.svg#cat-muscular-black-green-round") no-repeat center / contain;
 		margin-right: 11px;
 
 		@media #{$not-mobile} {
@@ -138,14 +132,10 @@
 		}
 
 		@media #{$desktop-only} {
-			// position: unset;
 			width: 134px;
 			height: 100px;
 			margin-left: -18px;
 			margin-right: 47px;
-			// margin: 0;
-			// margin-right: 62px;
-			// // background-position: left;
 		}
 	}
 }

@@ -34,7 +34,6 @@
 
 	@media #{$desktop-only} {
 		min-width: 569px;
-		// width: 569px;
 		position: relative;
 	}
 }
@@ -63,24 +62,15 @@
 }
 
 .cat-owner-data__input.cat-owner-data__input {
-	// position: relative;
-	// flex-grow: 2;
-	// padding-right: 20px;
-
 	@media #{$not-mobile} {
 		padding-right: 55px;
 	}
-
-	// @media #{$desktop-only} {
-	// 	position: relative;
-	// }
 }
 
-.cat-owner-data__input-icon { //cat-owner-data__mail-icon
-	// content: "";
+.cat-owner-data__input-icon {
 	width: 20px;
 	height: 20px;
-	mask: url("/icons/stack.svg#mail-icon") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#mail-icon") no-repeat center / contain;
 	background: currentColor;
 
 	position: absolute;
@@ -93,12 +83,9 @@
 	@media #{$desktop-only} {
 		right: 15px;
 	}
-	// &:focus {
-	// 	background: #68b738;
-	// }
 
 	&--phone-icon {
-		mask: url("/icons/stack.svg#phone-icon") no-repeat center / contain;
+		mask: url("../../icons/stack.svg#phone-icon") no-repeat center / contain;
 	}
 }
 

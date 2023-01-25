@@ -1,16 +1,9 @@
 .product-card {
 	box-sizing: border-box;
 	margin: 0;
-	// line-height: 14px; - в фигме так, оставил 18 для однообразия
-	// width: 280px;
-	// display: flex;
-	// flex-wrap: wrap;
-	// flex-direction: column;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	// grid-template-rows: 1fr 1fr 1fr;
 	padding: 22px 0 24px 0;
-	// row-gap: 5px;
 	position: relative;
 	min-height: 190px;
 
@@ -22,7 +15,6 @@
 		justify-content: end;
 		align-items: center;
 		padding: 8px 36px 39px 36px;
-		// background-color: var(--second-bg-color);
 		background-repeat: no-repeat;
 		background-image: linear-gradient(var(--second-bg-color), var(--second-bg-color));
 		background-size: 100% 84%;
@@ -62,13 +54,12 @@
 	grid-row: 1/2;
 	grid-column: 2/3;
 	display: block;
-	// margin-bottom: 18px;
+
 	@media #{$not-mobile} {
 		grid-row: 2/3;
 		grid-column: 1/2;
 		display: flex;
 		justify-content: center;
-		// align-self: end;
 		margin-top: 6px;
 	}
 
@@ -90,8 +81,6 @@
 		font-size: 20px;
 		line-height: 24px;
 		text-align: center;
-		// margin-bottom: 10px;
-		// padding-bottom: 2px;
 		margin-top: 10px;
 	}
 }
@@ -127,46 +116,8 @@
 }
 
 .product-card__image {
-	// margin: 10px auto 0 auto;
 	display: block;
-	// justify-self: center;
 }
-
-// .product-card picture {
-// 	order: 3;
-// }
-
-// .product-card__link {
-// 	text-decoration: none;
-// 	font-family: var(--accent-font);
-// 	font-size: 16px;
-// 	line-height: 20px;
-// 	text-transform: uppercase;
-// 	color: #222222;
-// 	grid-row: 1/2;
-// 	grid-column: 1/-1;
-// 	display: flex;
-
-// 	@media #{$not-mobile} {
-// 		flex-direction: column;
-// 	}
-// }
-
-// .product-card__title {
-// 	margin: 0;
-// 	font-size: 16px;
-// 	font-weight: 400;
-// 	order: 1;
-
-// 	@media #{$not-mobile} {
-// 		text-align: center;
-// 		order: unset;
-// 	}
-// }
-
-// .product-card__image {
-// 	// padding: 14px 36px 12px 36px;
-// }
 
 .product-card__parameters-list {
 	grid-row: 2/3;
@@ -181,10 +132,6 @@
 		align-self: flex-start;
 	}
 }
-
-// .product-card-parameters-list__parameter-value :nth-last-child() {
-// 	margin-right: 2px;
-// }
 
 .product-card__button {
 	grid-row: 3/4;

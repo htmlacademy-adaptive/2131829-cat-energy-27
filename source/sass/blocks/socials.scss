@@ -23,16 +23,16 @@
 		display: block;
 		width: 29px;
 		height: 22px;
-		mask: url("/icons/stack.svg#socials-vk") no-repeat center / contain;
+		mask: url("../../icons/stack.svg#socials-vk") no-repeat center / contain;
 		background: #666666;
 	}
 
 	&[href*="youtube"]::before {
-		mask: url("/icons/stack.svg#socials-yt") no-repeat center / contain;
+		mask: url("../../icons/stack.svg#socials-yt") no-repeat center / contain;
 	}
 
 	&[href*="t.me"]::before {
-		mask: url("/icons/stack.svg#socials-telegram") no-repeat center / contain;
+		mask: url("../../icons/stack.svg#socials-telegram") no-repeat center / contain;
 	}
 
 	&:hover::before {

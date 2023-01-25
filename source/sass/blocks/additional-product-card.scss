@@ -1,5 +1,4 @@
 .additional-product-card {
-	// width: 100%;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -11,11 +10,6 @@
 	}
 
 	@media #{$desktop-only} {
-		// flex-direction: row;
-		// align-items: baseline;
-		// width: 896px;
-		// justify-content: space-between;
-		// gap: 40px;
 		display: grid;
 		grid-template-columns: 285px 285px 244px;
 		column-gap: 40px;
@@ -81,7 +75,6 @@
 	color: #222222;
 	margin-bottom: 10px;
 	display: block;
-	// width: 285px;
 
 	@media #{$desktop-only} {
 		margin: 0;

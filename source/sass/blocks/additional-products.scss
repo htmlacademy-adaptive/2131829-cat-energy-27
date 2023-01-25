@@ -29,15 +29,9 @@
 	color: var(--second-text-color);
 	margin: 0;
 	margin-top: 26px;
-	// margin-bottom: 36px;
 	padding: 0;
-	// padding-bottom: 36px;
 	margin-bottom: 36px;
 	flex-grow: 1;
-
-	// &::before {
-	// 	bottom: 50%;
-	// }
 
 	@media #{$not-mobile} {
 		font-weight: 400;
@@ -53,7 +47,6 @@
 
 	@media #{$desktop-only} {
 		margin-left: -16px;
-		// display: block;
 		flex-grow: unset;
 		margin-bottom: 14px;
 	}

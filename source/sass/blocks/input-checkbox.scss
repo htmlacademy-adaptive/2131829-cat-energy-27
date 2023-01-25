@@ -1,5 +1,4 @@
 .input-checkbox {
-	// appearance: none;
 	margin: 0;
 	padding: 0;
 	width: 30px;
@@ -9,7 +8,6 @@
 	color: currentColor;
 	border: 1px solid #cdcdcd;
 	border-radius: 0;
-	// transform: translateY(-0.075em);
 	display: grid;
 	place-content: center;
 
@@ -37,8 +35,8 @@
 		height: 30px;
 		transform: scale(0);
 		transition: 120ms transform ease-in-out;
-		background: url("/icons/stack.svg#tick-checkbox") center center / contain no-repeat;
-		//говорят, что более контролируемо через clip path
+		background: url("../../icons/stack.svg#tick-checkbox") center center / contain no-repeat;
+
 		@media #{$not-mobile} {
 			width: 40px;
 			height: 40px;

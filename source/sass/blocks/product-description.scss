@@ -73,7 +73,7 @@
 		content: "";
 		width: 60px;
 		height: 60px;
-		background: var(--bg-options-image, url("/icons/stack.svg#white-leaf")) no-repeat center / 32px 32px,
+		background: var(--bg-options-image, url("../../icons/stack.svg#white-leaf")) no-repeat center / 32px 32px,
 			linear-gradient(
 				rgb(104 183 56 / 0.85),
 				rgb(104 183 56 / 0.85)
@@ -87,15 +87,15 @@
 	}
 
 	&--second::before {
-		--bg-options-image: url("/icons/stack.svg#white-glass-of-product");
+		--bg-options-image: url("../../icons/stack.svg#white-glass-of-product");
 	}
 
 	&--third::before {
-		--bg-options-image: url("/icons/stack.svg#white-fork-and-knife");
+		--bg-options-image: url("../../icons/stack.svg#white-fork-and-knife");
 	}
 
 	&--fourth::before {
-		--bg-options-image: url("/icons/stack.svg#white-clock");
+		--bg-options-image: url("../../icons/stack.svg#white-clock");
 	}
 }
 
