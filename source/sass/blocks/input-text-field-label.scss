@@ -3,4 +3,10 @@
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

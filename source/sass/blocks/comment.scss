@@ -2,13 +2,25 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 23px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 63px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 70px;
+	}
 }
 
 .comment__legend {
 	margin-bottom: 38px;
 
 	@media #{$not-mobile} {
-		margin-bottom: 76px;
+		margin-bottom: 77px;
+		padding-left: 20px;
+		margin-left: -20px;
+		padding-right: 20px;
+		margin-right: -20px;
 	}
 }
 
@@ -16,4 +28,9 @@
 	min-width: 280px;
 	height: 150px;
 	padding-right: 14px;
+
+	@media #{$not-mobile} {
+		width: 631px;
+		height: 174px;
+	}
 }

@@ -4,4 +4,11 @@
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--second-text-color);
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		color: #000000;
+	}
 }

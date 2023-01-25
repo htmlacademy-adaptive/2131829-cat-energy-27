@@ -3,4 +3,11 @@
 	font-size: 24px;
 	line-height: 26px;
 	color: var(--second-text-color);
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 36px;
+		color: #000000;
+	}
 }

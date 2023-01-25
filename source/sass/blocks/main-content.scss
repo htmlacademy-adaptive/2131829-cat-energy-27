@@ -60,4 +60,12 @@
 
 .main-content__service.main-content__service {
 	margin-bottom: 32px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 72px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 82px;
+	}
 }

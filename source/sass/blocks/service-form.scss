@@ -7,6 +7,14 @@
 .service-form__fieldset {
 	border: none;
 	// margin-bottom: 22px;
+
+	@media #{$not-mobile} {
+		margin-left: 40px;
+	}
+
+	@media #{$desktop-only} {
+		margin-left: 0;
+	}
 }
 
 .service-form__note {
@@ -22,21 +30,37 @@
 
 	@media #{$not-mobile} {
 		text-align: start;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 16px;
+		margin-top: 16px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 0;
+		margin-left: -8px;
 	}
 }
 
 
 .service-form__wrapper {
 	display: grid;
-	flex-direction: column;
 
 	@media #{$not-mobile} {
-		grid-template-columns: 1fr 1fr;
+		//
 	}
 
 	@media #{$desktop-only} {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 569px 569px;
+		column-gap: 80px;
 		align-items: center;
+	}
+
+	&--note {
+		@media #{$not-mobile} {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 65px;
+		}
 	}
 }
 
@@ -47,9 +71,15 @@
 
 	@media #{$not-mobile} {
 		width: 282px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 20px;
+		margin-left: 41px;
 	}
 
 	@media #{$desktop-only} {
 		width: 568px;
+		margin-left: 0;
+		margin-top: 4px;
 	}
 }

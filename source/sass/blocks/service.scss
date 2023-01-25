@@ -14,10 +14,17 @@
 	color: #000000;
 
 	@media #{$not-mobile} {
+		margin-top: 17px;
+		margin-left: 40px;
 		margin-bottom: 54px;
+		font-weight: 400;
+		font-size: 60px;
+		line-height: 60px;
 	}
 
 	@media #{$desktop-only} {
+		margin-top: 75px;
+		margin-left: 0;
 		margin-bottom: 56px;
 	}
 }
@@ -31,6 +38,16 @@
 	line-height: 18px;
 
 	@media #{$not-mobile} {
+		margin-bottom: 66px;
+		margin-left: 40px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	@media #{$desktop-only} {
+		// margin-top: 75px;
+		margin-left: 0;
 		margin-bottom: 66px;
 	}
 }

@@ -10,6 +10,13 @@
 	height: 45px;
 	flex-grow: 2;
 
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 30px;
+		height: 52px;
+	}
+
 	&:hover {
 		border-color: #cdcdcd;
 	}

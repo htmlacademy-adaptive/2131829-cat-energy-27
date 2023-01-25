@@ -2,12 +2,20 @@
 	margin: 0;
 	padding: 0;
 	padding-bottom: 34px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 20px;
+	}
 }
 
 .additional-service__item {
 	display: flex;
 	gap: 16px;
 	align-items: center;
+
+	@media #{$not-mobile} {
+		gap: 19px;
+	}
 }
 
 .additional-service__legend {
@@ -16,6 +24,10 @@
 
 	@media #{$not-mobile} {
 		margin-bottom: 57px;
+		padding-left: 20px;
+		margin-left: -20px;
+		padding-right: 20px;
+		margin-right: -20px;
 	}
 }
 
@@ -32,9 +44,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		row-gap: 32px;
+		column-gap: 20px;
 	}
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 45px;
 	}
 }

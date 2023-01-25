@@ -26,6 +26,10 @@
 		transition: 120ms transform ease-in-out;
 		background: url("/icons/stack.svg#tick-checkbox") center center / contain no-repeat;
 		//говорят, что более контролируемо через clip path
+		@media #{$not-mobile} {
+			width: 40px;
+			height: 40px;
+		}
 	}
 
 	&:checked::before {
