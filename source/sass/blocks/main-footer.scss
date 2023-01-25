@@ -43,6 +43,24 @@
 		display: block;
 		padding-top: 5px;
 	}
+
+	&:hover {
+		border: none;
+		outline: none;
+		opacity: 0.8;
+	}
+
+	&:focus {
+		border: none;
+		outline: none;
+		opacity: 0.8;
+	}
+
+	&:active {
+		border: none;
+		outline: none;
+		opacity: 0.6;
+	}
 }
 
 .main-footer__socials {

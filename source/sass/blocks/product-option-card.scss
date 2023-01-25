@@ -24,6 +24,14 @@
 	color: var(--second-text-color);
 	text-decoration: none;
 	text-transform: uppercase;
+
+	&:hover .product-option-card__link-text::after {
+		background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left 0 center / contain;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .product-option-card__title {
@@ -170,4 +178,8 @@
 			margin-left: 27px;
 		}
 	}
+
+	// &:hover::after {
+	// 	background: url("/icons/stack.svg#black-arrow-to-right") no-repeat left 0 center / contain;
+	// }
 }

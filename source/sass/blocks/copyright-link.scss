@@ -19,13 +19,32 @@
 		display: block;
 		width: 27px;
 		height: 34px;
-		background: url("/icons/stack.svg#html-academy-icon") no-repeat center / contain;
+		mask: url("/icons/stack.svg#html-academy-icon") no-repeat center / contain;
+		background: #666666;
 		// margin-left: auto; if j-c: s-b doesn't fit
 
 		@media #{$not-mobile} {
 			margin-left: 23px;
 			margin-top: -3px;
 		}
+	}
+
+	&:hover::after {
+		background: #68b738;
+	}
+
+	&:focus::after {
+		background: #68b738;
+	}
+
+	&:active .copyright-link__title {
+		color: #444444;
+		opacity: 0.3;
+	}
+
+	&:active::after {
+		opacity: 0.3;
+		background: #68b738;
 	}
 }
 
@@ -37,4 +56,9 @@
 		margin-right: 5px;
 		margin-top: -1px;
 	}
+
+	// &:active {
+	// 	color: #444444;
+	// 	opacity: 0.3;
+	// }
 }

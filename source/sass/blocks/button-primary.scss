@@ -28,4 +28,13 @@
 		line-height: 20px;
 		padding: 10px 44px;
 	}
+
+	&:hover {
+		background-color: #5eaa2f;
+	}
+
+	&:active {
+		background-color: #5eaa2f;
+		color: rgb(255 255 255 / 0.3);
+	}
 }

@@ -18,7 +18,7 @@
 			height: 1px;
 			width: 100%;
 			position: absolute;
-			bottom: -1px;
+			bottom: 0;
 		}
 	}
 
@@ -67,6 +67,24 @@
 
 	@media #{$desktop-only} {
 		min-width: 202px;
+	}
+
+	&:hover {
+		border: none;
+		outline: none;
+		opacity: 0.8;
+	}
+
+	&:focus {
+		border: none;
+		outline: none;
+		opacity: 0.8;
+	}
+
+	&:active {
+		border: none;
+		outline: none;
+		opacity: 0.6;
 	}
 }
 

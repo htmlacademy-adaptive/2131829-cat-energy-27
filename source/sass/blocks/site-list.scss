@@ -61,6 +61,17 @@
 		line-height: 30px;
 	}
 
+	&:hover {
+		border: none;
+		outline: none;
+		opacity: 0.6;
+	}
+
+	&:active {
+		border: none;
+		outline: none;
+		opacity: 0.3;
+	}
 	// &--light {
 	// 	@media #{$desktop-only} {
 	// 		color: #ffffff;

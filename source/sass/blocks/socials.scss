@@ -23,14 +23,28 @@
 		display: block;
 		width: 29px;
 		height: 22px;
-		background: url("/icons/stack.svg#socials-vk") no-repeat center / contain;
+		mask: url("/icons/stack.svg#socials-vk") no-repeat center / contain;
+		background: #666666;
 	}
 
 	&[href*="youtube"]::before {
-		background-image: url("/icons/stack.svg#socials-yt");
+		mask: url("/icons/stack.svg#socials-yt") no-repeat center / contain;
 	}
 
 	&[href*="t.me"]::before {
-		background-image: url("/icons/stack.svg#socials-telegram");
+		mask: url("/icons/stack.svg#socials-telegram") no-repeat center / contain;
+	}
+
+	&:hover::before {
+		background: #68b738;
+	}
+
+	&:focus::before {
+		background: #68b738;
+	}
+
+	&:active::before {
+		opacity: 0.3;
+		background: #68b738;
 	}
 }
